@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Español · Línea de estudio</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚇%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Caveat:wght@600;700&family=DM+Sans:wght@400;600;700&display=swap">
+<style>
+:root{--bg:#f4ead7;--sf:#fffaf0;--sf2:#eadfc6;--ink:#17213b;--mu:#6a6657;--ln:#d9ccae;--c0:#1fa36f;--c1:#e0457b;--c2:#2d5be3;--c3:#f0a202;--c4:#8e44ad;--ok:#1b9a67;--bad:#d63d3d;--fh:"Bricolage Grotesque","Arial Rounded MT Bold",system-ui,sans-serif;--fb:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--fd:Caveat,"Segoe Print","Bradley Hand",cursive;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1526;--sf:#182038;--sf2:#212b49;--ink:#f4ead7;--mu:#a9a58f;--ln:#2e3a5f;--ok:#4cd68a;--bad:#ff7b6b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1526;--sf:#182038;--sf2:#212b49;--ink:#f4ead7;--mu:#a9a58f;--ln:#2e3a5f;--ok:#4cd68a;--bad:#ff7b6b;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background-color:var(--bg);background-image:radial-gradient(circle at 25% 25%,color-mix(in srgb,var(--c2) 11%,transparent) 0 17%,transparent 18%),radial-gradient(circle at 75% 75%,color-mix(in srgb,var(--c1) 11%,transparent) 0 17%,transparent 18%);background-size:58px 58px;color:var(--ink);font:1rem/1.55 var(--fb);-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:70}
+button{font:inherit;color:inherit;cursor:pointer}[hidden]{display:none!important}.mu{color:var(--mu)}
+#top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 20px;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);border-bottom:3px solid var(--ink)}
+.brand{display:flex;align-items:center;gap:10px;font:800 1.15rem var(--fh)}.brand small{font:700 1.15rem var(--fd);color:var(--c1)}
+.stamp{width:40px;height:40px;display:grid;place-items:center;border:3px solid var(--ink);border-radius:50% 50% 50% 8px;background:var(--c3);font:800 1.5rem var(--fh);transform:rotate(-8deg);box-shadow:3px 3px 0 var(--ink)}
+#nav{display:flex;gap:8px;align-items:center}
+#nav button{border:3px solid var(--ink);background:var(--sf);border-radius:12px 12px 12px 3px;padding:6px 15px;font:800 .92rem var(--fh);box-shadow:3px 3px 0 var(--c);transition:.15s}
+#nav button.on{background:var(--c);color:#fff;transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+#nav #th{padding:6px 10px;--c:var(--ink)}
+main{max-width:1120px;margin:0 auto;padding:22px 18px 70px}
+.hd{display:flex;justify-content:space-between;align-items:flex-end;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+h1{font:800 clamp(1.7rem,4.6vw,3rem)/1 var(--fh);margin:0;letter-spacing:-.02em}h1 em{font:700 1.15em var(--fd);color:var(--c1);font-style:normal;display:inline-block;transform:rotate(-3deg)}
+.hint{font:700 1.3rem var(--fd);color:var(--mu);margin:0}
+.srch{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:10px 0}
+.srch input{flex:1;min-width:220px;border:3px solid var(--ink);border-radius:999px;padding:9px 18px;background:var(--sf);font:inherit;color:inherit;box-shadow:3px 3px 0 var(--c2)}
+.pill{display:inline-flex;align-items:center;gap:6px;border:2.5px solid var(--ink);border-radius:999px;padding:2px 12px;font:700 .85rem var(--fh);background:var(--sf)}.pill.gd{background:var(--ok);color:#fff}.pill.bd2{background:var(--bad);color:#fff}
+/* metrô */
+#metro{position:relative;aspect-ratio:1000/760;max-width:1040px;margin:6px auto 0}#metro svg.ml{position:absolute;inset:0;width:100%;height:100%}
+.hub{position:absolute;left:50%;top:50%;width:19%;aspect-ratio:1;transform:translate(-50%,-50%) rotate(-3deg);display:grid;place-items:center;text-align:center;z-index:3;border-radius:50%;background:var(--sf);border:4px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.hub svg{position:absolute;inset:3%;width:94%;height:94%;transform:rotate(-90deg)}.hub circle{fill:none;stroke-width:5}.hub .rb{stroke:var(--sf2)}.hub .rf{stroke:var(--ok);stroke-linecap:round;transition:stroke-dasharray .5s}
+.hub div{position:relative;line-height:1}.hub small{display:block;font:700 clamp(.8rem,1.8vw,1.35rem) var(--fd);color:var(--mu)}.hub b{display:block;font:800 clamp(.72rem,1.9vw,1.45rem) var(--fh);letter-spacing:.01em}.hub b span{display:inline-block}
+.hub em{display:block;font:700 clamp(.85rem,1.9vw,1.4rem) var(--fd);font-style:normal;color:var(--c1);margin:2px 0 4px}.hub u{text-decoration:none;font:700 clamp(.55rem,1vw,.8rem) var(--fh);background:var(--ink);color:var(--bg);border-radius:99px;padding:1px 9px}
+.st{position:absolute;transform:translate(-50%,-50%);z-index:4;background:none;border:0;padding:0}
+.st i{display:grid;place-items:center;width:clamp(25px,3.7vw,40px);aspect-ratio:1;border-radius:50%;background:var(--sf);border:4px solid var(--ink);box-shadow:0 0 0 4px var(--c);font:800 clamp(.58rem,1.1vw,.82rem) var(--fh);font-style:normal;transition:.18s}
+.st.d i{background:var(--c);color:#fff}.st:hover i,.st:focus-visible i{transform:scale(1.3) rotate(10deg);outline:0}
+.st span{position:absolute;width:clamp(95px,15vw,160px);font:700 clamp(.66rem,1.15vw,.92rem)/1.15 var(--fb);background:color-mix(in srgb,var(--sf) 90%,transparent);padding:2px 5px;border-radius:7px;pointer-events:none}
+.st.t span{bottom:150%;left:50%;transform:translateX(-50%);text-align:center}.st.b span{top:150%;left:50%;transform:translateX(-50%);text-align:center}
+.st.l span{right:150%;top:50%;transform:translateY(-50%);text-align:right}.st.r span{left:150%;top:50%;transform:translateY(-50%)}
+.st.dim,.sst.dim{opacity:.18}
+.tag{position:absolute;transform:translate(-50%,-50%) rotate(-2deg);z-index:5;border:3px solid var(--ink);background:var(--c);color:#fff;border-radius:10px 10px 10px 2px;padding:3px 10px;font:800 clamp(.6rem,1.15vw,.9rem)/1.1 var(--fh);width:clamp(86px,13vw,134px);text-align:center;box-shadow:3px 3px 0 var(--ink)}.tag small{display:block;font:600 .85em var(--fb);opacity:.9}
+.strips{display:none}
+.strip{margin:0 0 26px;--c:var(--c0)}.strip h3{display:flex;align-items:center;gap:8px;margin:0 0 10px;font:800 1.1rem var(--fh)}.strip h3 b{background:var(--c);color:#fff;border:3px solid var(--ink);border-radius:9px 9px 9px 2px;padding:0 9px;transform:rotate(-3deg)}.strip h3 small{margin-left:auto;font:700 .8rem var(--fb);color:var(--mu)}
+.sl{margin-left:14px;border-left:12px solid var(--c);padding-left:30px;display:grid;gap:12px;border-radius:0 0 0 16px}
+.sst{position:relative;text-align:left;background:var(--sf);border:3px solid var(--ink);border-radius:14px;padding:9px 12px;font:700 .95rem/1.2 var(--fb);box-shadow:3px 3px 0 var(--c)}.sst i{position:absolute;left:-52px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--sf);border:4px solid var(--ink);font:800 .72rem var(--fh);font-style:normal;box-shadow:0 0 0 3px var(--c)}.sst.d i{background:var(--c);color:#fff}
+@media(max-width:899px){#metro{display:none}.strips{display:block}#nav button span{display:none}#nav button{padding:6px 12px}#nav button span.k{display:inline}main{padding:16px 12px 60px}}
+/* painel */
+#bd{position:fixed;inset:0;background:rgba(10,14,30,.55);opacity:0;pointer-events:none;transition:.2s;z-index:40}
+#dw{position:fixed;top:0;right:0;bottom:0;width:min(660px,100vw);background:var(--bg);z-index:50;transform:translateX(105%);transition:transform .28s;display:flex;flex-direction:column;border-left:5px solid var(--c);box-sizing:border-box}
+body.dwo #bd{opacity:1;pointer-events:auto}body.dwo #dw{transform:none}
+#dwh,#dwf{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 16px}#dwh{padding-top:calc(10px + env(safe-area-inset-top,0px));border-bottom:3px solid var(--ink);background:var(--c);color:#fff;font:800 .95rem var(--fh)}#dwh button{background:#fff3;border:2px solid #fff;border-radius:9px;color:#fff;padding:2px 10px}
+#dwf{border-top:3px solid var(--ink);padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));background:var(--sf)}#dwb{flex:1;overflow:auto;padding:12px 18px 26px;-webkit-overflow-scrolling:touch}
+.btn{border:3px solid var(--ink);background:var(--sf);border-radius:12px 12px 12px 3px;padding:8px 16px;font:800 .92rem var(--fh);box-shadow:3px 3px 0 var(--ink);transition:.12s}.btn:hover:not(:disabled){transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}.btn:active:not(:disabled){transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.btn.p{background:var(--c,var(--c2));color:#fff}.btn:disabled{opacity:.35;cursor:default}.btn.ok{background:var(--ok);color:#fff}
+.card h2{font:800 1.5rem/1.15 var(--fh);margin:0 0 12px;display:flex;gap:10px;align-items:baseline}.num{font:800 .85rem var(--fh);color:var(--c);background:color-mix(in srgb,var(--c) 16%,transparent);border-radius:8px;padding:2px 9px}
+.card h3{font:800 .76rem var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--c);margin:20px 0 6px}.card p{margin:8px 0}.card ul,.card ol{padding-left:22px}.card li{margin:5px 0}.es{color:var(--c);font-weight:700}
+.tablewrap{overflow-x:auto;margin:10px 0}table{border-collapse:separate;border-spacing:0;width:100%;font-size:.92rem;border:2.5px solid var(--ink);border-radius:12px;overflow:hidden;background:var(--sf)}th,td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--ln);vertical-align:top}tr:last-child td{border-bottom:0}th{background:color-mix(in srgb,var(--c) 20%,var(--sf));font-size:.74rem;text-transform:uppercase;letter-spacing:.05em}
+.box{padding:11px 14px;border-radius:14px;background:color-mix(in srgb,var(--c) 10%,var(--sf));border:2.5px dashed color-mix(in srgb,var(--c) 65%,transparent);margin:12px 0}.box.warn{--c:var(--bad)}.box.good{--c:var(--ok)}
+.checklist label{display:flex;gap:10px;margin:9px 0;align-items:flex-start}.checklist input{accent-color:var(--c);width:19px;height:19px;flex:none;margin-top:3px}
+/* simulado */
+.v2{max-width:900px;margin:0 auto}.cx{background:var(--sf);border:3px solid var(--ink);border-radius:20px 20px 20px 5px;box-shadow:6px 6px 0 var(--c,var(--c2));padding:18px 20px;margin:0 0 18px}
+.cx h2{font:800 1.2rem var(--fh);margin:0 0 10px}.dash{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}@media(max-width:760px){.dash{grid-template-columns:1fr}}
+.ring{--p:0;position:relative;width:132px;aspect-ratio:1;border-radius:50%;background:conic-gradient(var(--ok) calc(var(--p)*1%),var(--bad) 0);border:3px solid var(--ink);flex:none;display:grid;place-items:center}.ring::after{content:"";position:absolute;inset:15%;border-radius:50%;background:var(--sf);border:3px solid var(--ink)}.ring b{position:relative;z-index:1;font:800 1.6rem var(--fh)}.ring.none{background:var(--sf2)}
+.kp{display:flex;gap:16px;align-items:center;flex-wrap:wrap}.kp ul{list-style:none;margin:0;padding:0;display:grid;gap:3px;font-weight:600}.kp li b{font:800 1.25rem var(--fh)}
+.bars{display:grid;gap:9px;margin-top:12px}.bar{font-size:.9rem;font-weight:600}.bar div{height:13px;border:2.5px solid var(--ink);border-radius:9px;background:var(--sf2);overflow:hidden;margin-top:3px}.bar i{display:block;height:100%;background:var(--c);width:0;transition:width .6s}
+.hist{display:flex;align-items:flex-end;gap:6px;height:80px;margin-top:8px}.hist span{flex:1;max-width:34px;border:2.5px solid var(--ink);border-radius:7px 7px 0 0;background:var(--ok);position:relative}.hist span.lo{background:var(--bad)}.hist span.mid{background:var(--c3)}.hist span i{position:absolute;top:-19px;left:50%;transform:translateX(-50%);font:700 .7rem var(--fh);font-style:normal}
+.fl{font:800 .76rem var(--fb);letter-spacing:.08em;text-transform:uppercase;color:var(--mu);margin:14px 0 6px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip input{position:absolute;opacity:0}.chip span{display:inline-block;border:2.5px solid var(--ink);border-radius:999px;padding:4px 13px;font:700 .86rem var(--fh);background:var(--sf);cursor:pointer}.chip input:checked+span{background:var(--ink);color:var(--bg)}.chip input:focus-visible+span{outline:3px solid var(--c2)}
+.qtop{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}.pb{height:12px;border:2.5px solid var(--ink);border-radius:9px;background:var(--sf2);overflow:hidden;margin:6px 0 10px}.pb i{display:block;height:100%;background:var(--c2);transition:width .3s}
+summary{cursor:pointer;font-weight:700;color:var(--c2)}.qmap{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.qmap button{width:34px;height:34px;border:2.5px solid var(--ink);border-radius:9px;background:var(--sf);font:700 .8rem var(--fh)}.qmap .a{background:var(--c3)}.qmap .ok{background:var(--ok);color:#fff}.qmap .no{background:var(--bad);color:#fff}.qmap .cur{outline:3px solid var(--c2);outline-offset:2px}
+.tx{background:color-mix(in srgb,var(--c3) 20%,var(--sf));border:3px solid var(--ink);border-radius:14px;padding:12px 16px;margin:12px 0;font-size:.97rem}.tx b{display:block;font-family:var(--fh);margin-bottom:4px}
+.qs{font:700 1.08rem/1.4 var(--fb);margin:0 0 12px}.op{display:flex;gap:12px;width:100%;text-align:left;background:var(--sf);border:3px solid var(--ink);border-radius:13px;padding:9px 12px;margin:8px 0;align-items:flex-start;transition:.12s}.op b{flex:none;width:28px;height:28px;border-radius:50%;background:var(--sf2);border:2.5px solid var(--ink);display:grid;place-items:center;font:800 .82rem var(--fh)}
+.op:hover:not(:disabled){transform:translateX(4px)}.op:disabled{cursor:default;color:inherit}.op.sel{background:color-mix(in srgb,var(--c3) 30%,var(--sf))}.op.sel b{background:var(--c3)}
+.op.ok{background:color-mix(in srgb,var(--ok) 20%,var(--sf))}.op.ok b{background:var(--ok);color:#fff}.op.no{background:color-mix(in srgb,var(--bad) 20%,var(--sf))}.op.no b{background:var(--bad);color:#fff}
+.fb{margin-top:10px;padding:10px 14px;border-radius:12px;border:2.5px dashed var(--bad);background:color-mix(in srgb,var(--bad) 9%,var(--sf));font-size:.95rem}.fb.g{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 10%,var(--sf));font-weight:700}
+.ctl{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap;margin-top:14px}
+.big{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.big .ring{width:170px}.big .ring b{font-size:2.2rem}.big h2{font:800 1.8rem/1.1 var(--fh);margin:0 0 6px}
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.tri div{border:3px solid var(--ink);border-radius:14px;padding:8px;text-align:center;background:var(--sf2)}.tri b{display:block;font:800 1.7rem var(--fh)}.tri small{font-weight:600}
+.it{border:3px solid var(--ink);border-radius:14px;margin:9px 0;background:var(--sf);overflow:hidden}.it summary{display:flex;gap:10px;align-items:center;padding:9px 12px;color:var(--ink)}.it summary b{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;font:800 .8rem var(--fh);background:var(--mu)}.it.ok summary b{background:var(--ok)}.it.err summary b{background:var(--bad)}.it summary span{flex:1;font-weight:600;font-size:.92rem}.it summary em{font:700 .78rem var(--fh);font-style:normal;white-space:nowrap}.it>div{padding:2px 14px 14px}
+#rl[data-f=err] .it:not(.err),#rl[data-f=ok] .it:not(.ok),#rl[data-f=blank] .it:not(.blank){display:none}
+.key{background:color-mix(in srgb,var(--c) 14%,var(--sf));border:3px solid var(--ink);border-radius:16px 16px 16px 4px;box-shadow:4px 4px 0 var(--c);padding:12px 14px;margin:0 0 16px}.key .k1{font:800 .72rem var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--c)}.key p{margin:3px 0 8px;font-weight:600}.key .ex{font:700 1.3rem/1.2 var(--fd)}.key .wr{font-size:.88rem;color:var(--bad);font-weight:700;margin-top:6px}.key h3{margin:0 0 6px;font:800 1rem var(--fh)}.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}.cg .key{margin:0;cursor:pointer;transition:.15s}.cg .key:hover{transform:translate(-2px,-2px)}
+@media print{#top,.srch,#dw,#bd,#pr{display:none!important}.cg .key{break-inside:avoid;box-shadow:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<header id="top"><div class="brand"><span class="stamp">Ñ</span><div>Español <small>Semestre III</small></div></div><nav id="nav" aria-label="Seções"></nav></header>
+<main>
+<section id="v-mapa">
+<div class="hd"><h1>Línea de <em>estudio</em></h1><p class="hint" id="pt"></p></div>
+<div class="srch"><input id="search" type="search" placeholder="Buscar tema, verbo ou exemplo (ex.: doler, imperativo)" aria-label="Buscar"><span class="mu">Toque numa estação para estudar.</span></div>
+<div id="metro"></div><div class="strips" id="strips"></div>
+</section>
+<section id="v-sim" class="v2" hidden></section>
+<section id="v-cola" class="v2" hidden style="max-width:1120px"></section>
+</main>
+<div id="bd"></div>
+<aside id="dw" aria-label="Tópico"><div id="dwh"><span id="dwg"></span><span><span id="dwn"></span> <button id="dwx" aria-label="Fechar">✕</button></span></div><div id="dwb"></div><div id="dwf"><button class="btn" id="pvT">←</button><button class="btn" id="rvT"></button><button class="btn" id="nxT">→</button></div></aside>
+<div id="pool" hidden><section class="card" data-key="presente indicativo conjugação verbos regulares irregulares venir volver encontrarse soler">
+<h2><span class="num">01</span> Presente de indicativo: conjugações</h2>
+<p>Usos: hábitos, fatos atuais e situações presentes. Retire <b>-ar, -er, -ir</b> e acrescente as terminações.</p>
+<div class="tablewrap"><table><tr><th>Pessoa</th><th>-AR: hablar</th><th>-ER: comer</th><th>-IR: vivir</th></tr>
+<tr><td>yo</td><td>habl<strong>o</strong></td><td>com<strong>o</strong></td><td>viv<strong>o</strong></td></tr>
+<tr><td>tú</td><td>habl<strong>as</strong></td><td>com<strong>es</strong></td><td>viv<strong>es</strong></td></tr>
+<tr><td>él/ella/usted</td><td>habl<strong>a</strong></td><td>com<strong>e</strong></td><td>viv<strong>e</strong></td></tr>
+<tr><td>nosotros/as</td><td>habl<strong>amos</strong></td><td>com<strong>emos</strong></td><td>viv<strong>imos</strong></td></tr>
+<tr><td>vosotros/as</td><td>habl<strong>áis</strong></td><td>com<strong>éis</strong></td><td>viv<strong>ís</strong></td></tr>
+<tr><td>ellos/ellas/ustedes</td><td>habl<strong>an</strong></td><td>com<strong>en</strong></td><td>viv<strong>en</strong></td></tr></table></div>
+<h3>Irregulares essenciais</h3>
+<div class="tablewrap"><table><tr><th>Verbo</th><th>yo</th><th>tú</th><th>él/ella/usted</th><th>nosotros/as</th><th>vosotros/as</th><th>ellos/ustedes</th></tr>
+<tr><td><b>ser</b></td><td>soy</td><td>eres</td><td>es</td><td>somos</td><td>sois</td><td>son</td></tr>
+<tr><td><b>estar</b></td><td>estoy</td><td>estás</td><td>está</td><td>estamos</td><td>estáis</td><td>están</td></tr>
+<tr><td><b>tener</b></td><td>tengo</td><td>tienes</td><td>tiene</td><td>tenemos</td><td>tenéis</td><td>tienen</td></tr>
+<tr><td><b>venir</b></td><td>vengo</td><td>vienes</td><td>viene</td><td>venimos</td><td>venís</td><td>vienen</td></tr>
+<tr><td><b>volver</b></td><td>vuelvo</td><td>vuelves</td><td>vuelve</td><td>volvemos</td><td>volvéis</td><td>vuelven</td></tr>
+<tr><td><b>soler</b></td><td>suelo</td><td>sueles</td><td>suele</td><td>solemos</td><td>soléis</td><td>suelen</td></tr>
+<tr><td><b>encontrarse</b></td><td>me encuentro</td><td>te encuentras</td><td>se encuentra</td><td>nos encontramos</td><td>os encontráis</td><td>se encuentran</td></tr>
+<tr><td><b>ir</b></td><td>voy</td><td>vas</td><td>va</td><td>vamos</td><td>vais</td><td>van</td></tr>
+<tr><td><b>hacer</b></td><td>hago</td><td>haces</td><td>hace</td><td>hacemos</td><td>hacéis</td><td>hacen</td></tr>
+<tr><td><b>decir</b></td><td>digo</td><td>dices</td><td>dice</td><td>decimos</td><td>decís</td><td>dicen</td></tr>
+<tr><td><b>poder</b></td><td>puedo</td><td>puedes</td><td>puede</td><td>podemos</td><td>podéis</td><td>pueden</td></tr>
+<tr><td><b>querer</b></td><td>quiero</td><td>quieres</td><td>quiere</td><td>queremos</td><td>queréis</td><td>quieren</td></tr>
+<tr><td><b>pedir</b></td><td>pido</td><td>pides</td><td>pide</td><td>pedimos</td><td>pedís</td><td>piden</td></tr>
+<tr><td><b>decir</b></td><td>digo</td><td>dices</td><td>dice</td><td>decimos</td><td>decís</td><td>dicen</td></tr></table></div>
+<div class="box"><b>Como reconhecer a mudança:</b> <span class="es">e → ie</span> (querer, tener, venir, encontrar-se); <span class="es">o → ue</span> (volver, poder, doler); <span class="es">e → i</span> (pedir). Em geral, a mudança ocorre em todas as pessoas, <b>menos nosotros e vosotros</b>. Alguns verbos também têm “yo” irregular: tengo, vengo, hago, digo.</div>
+</section>
+<section class="card" data-key="encantar doler apetecer interesar gustar pronomes indiretos">
+<h2><span class="num">02</span> Encantar, doler, apetecer, interesar</h2>
+<p>Funcionam como <b>gustar</b>: a coisa que provoca a sensação é o sujeito. O pronome indica a pessoa afetada.</p>
+<div class="tablewrap"><table><tr><th>Pessoa</th><th>Pronome</th><th>Exemplo</th></tr>
+<tr><td>a mí</td><td>me</td><td>A mí <b>me</b> encanta el español.</td></tr>
+<tr><td>a ti</td><td>te</td><td>¿<b>Te</b> interesa la música?</td></tr>
+<tr><td>a él/ella/usted</td><td>le</td><td><b>Le</b> duele la cabeza.</td></tr>
+<tr><td>a nosotros/as</td><td>nos</td><td><b>Nos</b> apetecen unas tapas.</td></tr>
+<tr><td>a vosotros/as</td><td>os</td><td>¿<b>Os</b> encanta viajar?</td></tr>
+<tr><td>a ellos/ellas/ustedes</td><td>les</td><td><b>Les</b> interesan los idiomas.</td></tr></table></div>
+<ul><li><b>Singular ou infinitivo → encanta/interesa/apetece/duele:</b> Me encanta <i>leer</i>. / Me duele <i>la espalda</i>.</li><li><b>Plural → encantan/interesan/apetecen/duelen:</b> Me encantan <i>los libros</i>. / Me duelen <i>los pies</i>.</li></ul>
+<div class="box good"><b>Para perguntar:</b> ¿Qué te apetece? (O que você está com vontade de comer/fazer?) · ¿Te duele algo? · ¿Qué te interesa?</div>
+<div class="box warn"><b>Atenção:</b> diga <i>Me gusta el café</i> e <i>Me gustan los libros</i>; não *yo gusto el café*. “A mí / a ti / a ella” pode reforçar ou esclarecer: <i>A mí me encanta…</i></div>
+</section>
+<section class="card" data-key="muy mucho mucha muchos muchas diferença">
+<h2><span class="num">03</span> Muy × mucho/a/os/as</h2>
+<ul><li><b>MUY + adjetivo/advérbio:</b> <i>muy interesante, muy bien, muy rápido.</i></li><li><b>MUCHO + verbo:</b> <i>Estudio mucho. Me gusta mucho.</i></li><li><b>MUCHO/A/OS/AS + substantivo:</b> concorda em gênero e número: <i>mucho tiempo, mucha agua, muchos libros, muchas clases.</i></li><li><b>Verbos específicos:</b> <i>mucho</i> depois do verbo: <i>Me duele mucho la cabeza.</i></li></ul>
+<div class="box"><b>Comparação:</b> <i>Es muy simpática.</i> / <i>Estudia mucho.</i> / <i>Tiene muchos amigos.</i></div>
+</section>
+<section class="card" data-key="hay que tener que deber infinitivo obrigação perífrasis">
+<h2><span class="num">04</span> Obrigação: hay que, tener que, deber</h2>
+<ul><li><b>HAY QUE + infinitivo</b> — obrigação geral/impessoal: <i>Hay que estudiar para aprobar.</i> (É preciso estudar.)</li><li><b>TENER QUE + infinitivo</b> — obrigação de alguém; conjuga-se <i>tener</i>: <i>Tengo que estudiar. Tienes que venir. Tenemos que volver.</i></li><li><b>DEBER + infinitivo</b> — dever, recomendação ou obrigação: <i>Debes descansar. Debemos respetar las normas.</i></li></ul>
+<div class="box warn">Depois dessas expressões, o segundo verbo fica no <b>infinitivo</b>: <i>tengo que hacer</i>, não *tengo que hago*. “Hay que” não muda conforme a pessoa.</div>
+<h3>Tener no presente</h3><p class="es">tengo · tienes · tiene · tenemos · tenéis · tienen</p>
+<h3>Deber no presente</h3><p class="es">debo · debes · debe · debemos · debéis · deben</p>
+</section>
+<section class="card" data-key="condicional si presente presente">
+<h2><span class="num">05</span> Condicional real: si + presente, presente</h2>
+<p>Para situações possíveis, regras e resultados habituais.</p>
+<div class="box"><b>Fórmula:</b> <span class="es">Si + presente de indicativo, presente de indicativo.</span><br><i>Si estudio, apruebo.</i> (Se estudo, passo.)<br><i>Si llueve, no salimos.</i><br><i>Si tengo tiempo, voy al gimnasio.</i></div>
+<p>A oração com <b>si</b> pode vir antes ou depois: <i>Si hace frío, llevo una chaqueta.</i> / <i>Llevo una chaqueta si hace frío.</i></p>
+<div class="box warn">Para este conteúdo, memorize o padrão do edital: <b>si + presente → presente</b>. Não confunda com construções hipotéticas com subjuntivo.</div>
+</section>
+<section class="card" data-key="interrogativos qué cuántos cómo cuándo dónde cuál cuáles perguntas">
+<h2><span class="num">06</span> Interrogativos: qué, cuánto, cómo, cuándo, dónde, cuál</h2>
+<div class="tablewrap"><table><tr><th>Palavra</th><th>Uso</th><th>Exemplo</th></tr>
+<tr><td><b>qué</b></td><td>o que / que</td><td>¿Qué estudias? ¿Qué libro quieres?</td></tr>
+<tr><td><b>cuánto/a/os/as</b></td><td>quantidade; concorda com substantivo</td><td>¿Cuánto cuesta? ¿Cuántas clases tienes?</td></tr>
+<tr><td><b>cómo</b></td><td>como / de que maneira / estado</td><td>¿Cómo estás? ¿Cómo se dice…?</td></tr>
+<tr><td><b>cuándo</b></td><td>quando</td><td>¿Cuándo vuelves?</td></tr>
+<tr><td><b>dónde</b></td><td>onde</td><td>¿Dónde está la estación?</td></tr>
+<tr><td><b>cuál / cuáles</b></td><td>qual / quais; selecionar entre opções</td><td>¿Cuál prefieres? ¿Cuáles son tuyos?</td></tr></table></div>
+<div class="box good">Interrogativos levam acento: <b>qué, cuál, cómo, cuándo, dónde, cuánto</b>. Em espanhol, perguntas usam sinais de abertura e fechamento: <i>¿…?</i></div>
+<p><b>Qué × cuál:</b> <i>¿Qué es esto?</i> (O que é isto?) · <i>¿Cuál prefieres?</i> (Qual você prefere?) · <i>¿Cuál es tu nombre?</i> também é comum para perguntar o nome.</p>
+</section>
+<section class="card" data-key="demostrativos este esta esto ese esa eso aquel aquella aquello">
+<h2><span class="num">07</span> Demonstrativos</h2>
+<p>Indicam distância em relação a quem fala/ouve. As formas neutras <b>esto, eso, aquello</b> não acompanham substantivo.</p>
+<div class="tablewrap"><table><tr><th>Distância</th><th>Masculino</th><th>Feminino</th><th>Neutro</th><th>Exemplo</th></tr>
+<tr><td>Perto de quem fala</td><td>este / estos</td><td>esta / estas</td><td>esto</td><td>Este libro, esta mesa, esto.</td></tr>
+<tr><td>Distância média / perto do interlocutor</td><td>ese / esos</td><td>esa / esas</td><td>eso</td><td>Ese coche, esa silla, eso.</td></tr>
+<tr><td>Longe de ambos</td><td>aquel / aquellos</td><td>aquella / aquellas</td><td>aquello</td><td>Aquel edificio, aquella casa.</td></tr></table></div>
+<ul><li><i>¿Qué es esto?</i> — Isto, sem dizer o nome da coisa.</li><li><i>Esta mochila es mía.</i> — “Esta” concorda com mochila (feminino singular).</li><li><i>Aquellos edificios son altos.</i> — Masculino plural.</li></ul>
+<div class="box">Formas neutras: <b>esto, eso, aquello</b> são usadas sozinhas para ideias/coisas não identificadas; não se diz *esto libro*. Diga <i>este libro</i>.</div>
+</section>
+<section class="card" data-key="posesivos mío mía míos mías tuyo suyo nuestro vuestro">
+<h2><span class="num">08</span> Pronomes possessivos tônicos</h2>
+<p>Substituem o substantivo ou aparecem depois de um artigo. Concordam com a <b>coisa possuída</b>, não com o dono.</p>
+<div class="tablewrap"><table><tr><th>Dono</th><th>Masculino sing.</th><th>Feminino sing.</th><th>Masculino pl.</th><th>Feminino pl.</th></tr>
+<tr><td>yo</td><td>mío</td><td>mía</td><td>míos</td><td>mías</td></tr>
+<tr><td>tú</td><td>tuyo</td><td>tuya</td><td>tuyos</td><td>tuyas</td></tr>
+<tr><td>él/ella/usted</td><td>suyo</td><td>suya</td><td>suyos</td><td>suyas</td></tr>
+<tr><td>nosotros/as</td><td>nuestro</td><td>nuestra</td><td>nuestros</td><td>nuestras</td></tr>
+<tr><td>vosotros/as</td><td>vuestro</td><td>vuestra</td><td>vuestros</td><td>vuestras</td></tr>
+<tr><td>ellos/ustedes</td><td>suyo</td><td>suya</td><td>suyos</td><td>suyas</td></tr></table></div>
+<p>Exemplos: <i>Este libro es mío.</i> · <i>La casa es nuestra.</i> · <i>¿Estos zapatos son tuyos?</i> · <i>Los míos están aquí.</i></p>
+<div class="box warn"><b>Ambiguidade:</b> <i>suyo/a/os/as</i> pode significar dele, dela, de você ou deles/delas. Se necessário, esclareça: <i>Es de ella.</i></div>
+</section>
+<section class="card" data-key="hay están estar hay diferencia existencia ubicación">
+<h2><span class="num">09</span> HAY × ESTÁ / ESTÁN</h2>
+<ul><li><b>HAY</b> (haver/existir): apresenta algo ou pergunta se existe; não muda no singular/plural. <i>Hay un banco. Hay dos farmacias.</i></li><li><b>ESTÁ / ESTÁN</b> (estar/localizar): indica onde está algo já identificado. <i>El banco está aquí. Las farmacias están cerca.</i></li></ul>
+<div class="box"><b>Compare:</b><br><i>¿Hay una farmacia por aquí?</i> (Existe uma farmácia por aqui?)<br><i>Sí, la farmacia está al lado del banco.</i> (A farmácia está ao lado do banco.)</div>
+<p><b>Estar no presente:</b> estoy · estás · está · estamos · estáis · están.</p>
+<div class="box warn">Não use *hay el banco* para localizar um banco específico. Use <i>El banco está en la plaza.</i> “Hay” costuma vir com <i>un/una, dos, muchos, algún</i>; “estar” com <i>el/la/los/las</i> quando o referente já é conhecido.</div>
+</section>
+<section class="card" data-key="indefinidos algún alguno alguna algunos algunas ningún ninguno ninguna">
+<h2><span class="num">10</span> Indefinidos: algún / alguno e ningún / ninguno</h2>
+<div class="tablewrap"><table><tr><th>Masculino antes de substantivo</th><th>Outras formas</th><th>Exemplos</th></tr>
+<tr><td><b>algún</b> (singular)</td><td>alguna, algunos, algunas</td><td>¿Hay algún supermercado? Tengo algunas ideas.</td></tr>
+<tr><td><b>ningún</b> (singular)</td><td>ninguna; ninguno (pronome)</td><td>No hay ningún problema. No tengo ninguna pregunta.</td></tr></table></div>
+<ul><li><b>Algún / ningún</b> perdem o <i>-o</i> antes de substantivo masculino singular: <i>algún día, ningún libro</i>.</li><li><b>Alguno/a/os/as</b> pode acompanhar um nome (exceto a forma masculina singular antes do nome) ou substituir um substantivo: <i>¿Tienes bolígrafos? Sí, tengo algunos.</i></li><li><b>Ninguno/a</b> pode substituir o nome: <i>¿Hay preguntas? No, ninguna.</i> Masculino: <i>ninguno</i>.</li><li>Negação natural: <i>No tengo ningún hermano.</i> O “no” antes do verbo é normal em espanhol.</li></ul>
+<div class="box">Compare: <i>¿Tienes algún libro?</i> (algum livro?) · <i>No tengo ningún libro.</i> (não tenho livro nenhum) · <i>¿Hay alguna cafetería?</i> · <i>No hay ninguna.</i></div>
+</section>
+<section class="card" data-key="estar gerundio gerundio hablando comiendo viviendo haciendo diciendo yendo">
+<h2><span class="num">11</span> Estar + gerúndio</h2>
+<p>Expressa ação em andamento: <b>estar conjugado + gerúndio</b>.</p>
+<div class="tablewrap"><table><tr><th>Infinitivo</th><th>Gerúndio</th><th>Exemplo</th></tr>
+<tr><td>hablar (-ar)</td><td>hablando</td><td>Estoy hablando.</td></tr>
+<tr><td>comer (-er)</td><td>comiendo</td><td>Estás comiendo.</td></tr>
+<tr><td>vivir (-ir)</td><td>viviendo</td><td>Estamos viviendo en España.</td></tr>
+<tr><td>hacer</td><td>haciendo</td><td>Está haciendo los deberes.</td></tr>
+<tr><td>decir</td><td>diciendo</td><td>Estoy diciendo la verdad.</td></tr>
+<tr><td>ir</td><td>yendo</td><td>Voy yendo / Estoy yendo.</td></tr>
+<tr><td>dormir</td><td>durmiendo</td><td>El niño está durmiendo.</td></tr>
+<tr><td>leer</td><td>leyendo</td><td>Estoy leyendo.</td></tr>
+<tr><td>pedir</td><td>pidiendo</td><td>Está pidiendo ayuda.</td></tr></table></div>
+<p><b>Estar:</b> estoy, estás, está, estamos, estáis, están + gerúndio.</p>
+<div class="box warn">O gerúndio não concorda com a pessoa: <i>yo estoy estudiando; ellas están estudiando</i>. Use para o que está acontecendo agora, não automaticamente para todo hábito.</div>
+</section>
+<section class="card" data-key="imperativo afirmativo negativo pronombres personales átonos">
+<h2><span class="num">12</span> Imperativo e pronomes átonos</h2>
+<p>O imperativo dá ordens, instruções, conselhos ou pedidos. Formas mais importantes do <b>afirmativo</b>:</p>
+<div class="tablewrap"><table><tr><th>Infinitivo</th><th>tú</th><th>usted</th><th>vosotros/as</th><th>ustedes</th></tr>
+<tr><td>hablar</td><td>habla</td><td>hable</td><td>hablad</td><td>hablen</td></tr>
+<tr><td>comer</td><td>come</td><td>coma</td><td>comed</td><td>coman</td></tr>
+<tr><td>vivir</td><td>vive</td><td>viva</td><td>vivid</td><td>vivan</td></tr>
+<tr><td>hacer</td><td><b>haz</b></td><td>haga</td><td>haced</td><td>hagan</td></tr>
+<tr><td>decir</td><td><b>di</b></td><td>diga</td><td>decid</td><td>digan</td></tr>
+<tr><td>ir</td><td><b>ve</b></td><td>vaya</td><td>id</td><td>vayan</td></tr>
+<tr><td>poner</td><td><b>pon</b></td><td>ponga</td><td>poned</td><td>pongan</td></tr>
+<tr><td>salir</td><td><b>sal</b></td><td>salga</td><td>salid</td><td>salgan</td></tr>
+<tr><td>tener</td><td><b>ten</b></td><td>tenga</td><td>tened</td><td>tengan</td></tr>
+<tr><td>venir</td><td><b>ven</b></td><td>venga</td><td>venid</td><td>vengan</td></tr>
+<tr><td>ser</td><td><b>sé</b></td><td>sea</td><td>sed</td><td>sean</td></tr></table></div>
+<h3>Onde ficam os pronomes?</h3>
+<ul><li><b>Imperativo afirmativo: grudados no verbo</b> — <i>¡Dime la verdad!</i> · <i>Siéntate.</i> · <i>¡Hazlo!</i> · <i>¡Dámelo!</i></li><li><b>Imperativo negativo: antes do verbo</b> — <i>No me digas eso.</i> · <i>No te sientes.</i> · <i>No lo hagas.</i></li></ul>
+<div class="box"><b>Pronomes átonos comuns:</b> me, te, lo, la, le, nos, os, los, las, les, se. Ex.: <i>Compra el pan → Cómpralo.</i> / <i>Da el libro a Ana → Dáselo.</i></div>
+<div class="box warn"><b>Acentuação:</b> ao anexar pronome(s), pode ser necessário acento para manter a tonicidade: <i>da → dame; di → dime; compra → cómpralo; sienta → siéntate.</i> Para <i>vosotros</i>, o <i>-d</i> costuma desaparecer antes de <i>os</i>: <i>sentaos</i> (de sentad + os).</div>
+<p class="small muted">Observação: o imperativo negativo usa formas do presente do subjuntivo (ex.: no hables, no coma). O foco aqui é reconhecer a formação e a posição dos pronomes.</p>
+</section>
+<section class="card" data-key="antes de después de infinitivo">
+<h2><span class="num">13</span> Antes de / después de + infinitivo</h2>
+<p>Quando o sujeito é o mesmo nas duas ações, usa-se <b>antes de + infinitivo</b> ou <b>después de + infinitivo</b>.</p>
+<div class="box"><i>Antes de salir, cierro la puerta.</i> (Antes de sair, fecho a porta.)<br><i>Después de comer, estudio.</i> (Depois de comer, estudo.)<br><i>Lávate las manos antes de comer.</i></div>
+<p>Se vier um substantivo, também se usa <i>antes de/después de + substantivo</i>: <i>después de la clase</i>.</p>
+<div class="box warn">Não confundir com <i>antes de que / después de que</i>, que normalmente introduzem uma oração com verbo conjugado. O edital pede especificamente <b>antes de / después de + infinitivo</b>.</div>
+</section>
+<section class="card" data-key="soler infinitivo hábitos suelo sueles suele solemos soléis suelen">
+<h2><span class="num">14</span> Soler + infinitivo</h2>
+<p>Expressa hábito ou algo que costuma acontecer. <b>Soler é irregular</b> (o → ue, exceto nosotros/vosotros).</p>
+<div class="tablewrap"><table><tr><th>Pessoa</th><th>Conjugação</th><th>Exemplo</th></tr>
+<tr><td>yo</td><td>suelo</td><td>Suelo leer por la noche.</td></tr>
+<tr><td>tú</td><td>sueles</td><td>Sueles estudiar aquí.</td></tr>
+<tr><td>él/ella/usted</td><td>suele</td><td>Ella suele venir temprano.</td></tr>
+<tr><td>nosotros/as</td><td>solemos</td><td>Solemos caminar juntos.</td></tr>
+<tr><td>vosotros/as</td><td>soléis</td><td>¿Soléis cocinar en casa?</td></tr>
+<tr><td>ellos/ustedes</td><td>suelen</td><td>Suelen volver a las ocho.</td></tr></table></div>
+<div class="box">O verbo seguinte fica no infinitivo: <i>Suelo estudiar</i>, não *suelo estudio*. É parecido com “costumar” em português.</div>
+</section>
+<section class="card" data-key="ir a infinitivo futuro voy vas va vamos vais van">
+<h2><span class="num">15</span> Ir a + infinitivo</h2>
+<p>Expressa planos ou futuro próximo: <b>ir conjugado + a + infinitivo</b>.</p>
+<div class="tablewrap"><table><tr><th>Pessoa</th><th>Ir</th><th>Exemplo</th></tr>
+<tr><td>yo</td><td>voy</td><td>Voy a estudiar.</td></tr><tr><td>tú</td><td>vas</td><td>Vas a venir.</td></tr>
+<tr><td>él/ella/usted</td><td>va</td><td>Va a llover.</td></tr><tr><td>nosotros/as</td><td>vamos</td><td>Vamos a volver pronto.</td></tr>
+<tr><td>vosotros/as</td><td>vais</td><td>Vais a comer.</td></tr><tr><td>ellos/ustedes</td><td>van</td><td>Van a viajar.</td></tr></table></div>
+<div class="box warn">Atenção à sequência: <i>voy a + infinitivo</i>. Não conjugar o segundo verbo: <i>Voy a hacer la tarea</i>, não *voy a hago la tarea*.</div>
+</section>
+<section class="card" data-key="ser ubicar tiempo espacio hora fecha ubicación">
+<h2><span class="num">16</span> Ser para ubicar en el tiempo y en el espacio</h2>
+<p><b>SER</b> pode ser usado para localizar acontecimentos no tempo e no espaço — especialmente eventos.</p>
+<ul><li><b>Tempo / hora:</b> <i>Es la una.</i> · <i>Son las tres.</i> · <i>Hoy es lunes.</i> · <i>Es el 30 de octubre.</i></li><li><b>Evento + lugar:</b> <i>La clase es en el aula 2.</i> · <i>La fiesta es en mi casa.</i> · <i>El examen es en la universidad.</i></li><li><b>Evento + tempo:</b> <i>La reunión es a las ocho.</i> · <i>El examen es mañana.</i></li></ul>
+<div class="box"><b>Ser no presente:</b> soy · eres · es · somos · sois · son.<br><b>Regra útil:</b> para a localização de objetos/pessoas, em geral use <i>estar</i>: <i>El libro está en la mesa.</i> Para a localização de um acontecimento, use <i>ser</i>: <i>El concierto es en el teatro.</i></div>
+</section>
+<section class="card wide" data-key="resumo erros prova checklist revisão">
+<h2><span class="num">★</span> Revisão final para a prova</h2>
+<div class="checklist">
+<label><input type="checkbox"> Sei conjugar <b>venir, volver, soler, encontrarse, tener, ser, estar e ir</b>.</label>
+<label><input type="checkbox"> Sei escolher <b>me/te/le/nos/os/les</b> com encantar, doler, apetecer e interesar.</label>
+<label><input type="checkbox"> Distingo <b>muy</b> (adjetivo/advérbio), <b>mucho</b> (verbo) e mucho/a/os/as (substantivo).</label>
+<label><input type="checkbox"> Sei formar hay que / tener que / deber + infinitivo.</label>
+<label><input type="checkbox"> Uso <b>si + presente, presente</b> para condições reais.</label>
+<label><input type="checkbox"> Sei fazer perguntas com qué, cuánto, cómo, cuándo, dónde e cuál.</label>
+<label><input type="checkbox"> Concordo demonstrativos e possessivos com o substantivo correto.</label>
+<label><input type="checkbox"> Distingo <b>hay</b> (existência) de <b>está/están</b> (localização).</label>
+<label><input type="checkbox"> Sei usar algún/alguna/algunos/algunas e ningún/ninguna/ninguno.</label>
+<label><input type="checkbox"> Formo gerúndios e uso estar + gerundio.</label>
+<label><input type="checkbox"> Sei imperativos comuns e a posição dos pronomes: afirmativo colado, negativo antes.</label>
+<label><input type="checkbox"> Uso antes de/después de + infinitivo, soler + infinitivo e ir a + infinitivo.</label>
+<label><input type="checkbox"> Sei usar ser para hora/data e para localizar eventos.</label>
+</div>
+<h3>Mini teste — tente responder sem olhar as seções</h3>
+<ol>
+<li>Yo ______ (venir) a clase y después ______ (volver) a casa.</li>
+<li>A Marta ______ ______ (doler) los pies.</li>
+<li>Estudio ______ porque el examen es ______ difícil. (mucho / muy)</li>
+<li>Si tengo tiempo, ______ (leer) un libro.</li>
+<li>¿______ clases tienes hoy? ¿______ está la biblioteca?</li>
+<li>Este bolígrafo es mío; aquellos son ______ (tu).</li>
+<li>¿______ una farmacia cerca? La farmacia ______ al lado del banco.</li>
+<li>No tengo ______ pregunta, pero tengo ______ dudas. (ningún/ninguna/algunas)</li>
+<li>Ahora nosotros ______ ______ (estar + estudiar).</li>
+<li>¡______ (hacer, tú) la tarea! → ¡______ (hacer + lo, tú)!</li>
+<li>______ de salir, apago la luz. (antes/después)</li>
+<li>Yo ______ (soler) estudiar por la mañana; mañana ______ a estudiar por la tarde. (ir)</li>
+<li>La clase ______ en el aula 3 y ______ a las nueve. (ser)</li>
+</ol>
+<details><summary><b>Ver gabarito</b></summary>
+<ol><li>vengo; vuelvo</li><li>le duelen</li><li>mucho; muy</li><li>leo</li><li>Cuántas; dónde</li><li>tuyos</li><li>¿Hay; está</li><li>ninguna; algunas</li><li>estamos estudiando</li><li>Haz; hazlo</li><li>Antes</li><li>suelo; voy</li><li>es; es</li></ol>
+</details>
+</section></div>
+<script>
+const RAW=`#Texto 1 – En la consulta del médico¶— Buenos días, doctor. Me duele mucho la garganta y tengo fiebre desde ayer.¶— ¿Tiene tos? ¿Le duele la cabeza?¶— Sí, tengo un poco de tos y me duele la cabeza. Además, no me apetece comer nada.¶— Tiene que tomar este jarabe dos veces al día y debe beber mucha agua. Si no mejora en tres días, vuelva a la consulta.
+Segundo o texto, o paciente apresenta:|dor de estômago e tosse|dor de garganta, febre e tosse|apenas dor de cabeça|dor de ouvido e vômito|dor nas costas e febre|B|O paciente diz "me duele la garganta", "tengo fiebre" e "un poco de tos".
+No trecho "no me apetece comer nada", o paciente quer dizer que:|não tem vontade de comer|está proibido de comer|comeu demais|adora comer|vai comer algo leve|A|Apetecer = ter vontade/apetecer. Com "no", indica falta de vontade.
+A expressão "Tiene que tomar" indica:|hábito|obrigação pessoal|obrigação impessoal|ação em curso|futuro próximo|B|Tener que + infinitivo expressa obrigação pessoal (aqui, o sujeito é usted). A impessoal seria "hay que".
+"Vuelva a la consulta" é uma forma de:|imperativo afirmativo de tú|imperativo negativo de tú|imperativo afirmativo de usted|gerúndio|presente de indicativo|C|Vuelva é o imperativo de usted do verbo volver. Para tú seria "vuelve".
+#Texto 2 – En el restaurante¶— Buenas noches. ¿Qué van a tomar?¶— De primero, una ensalada y, de segundo, pescado con patatas. Para beber, agua sin gas.¶— ¿Y de postre?¶— ¿Qué postres hay?¶— Hay flan, fruta y helado.¶— Tráigame un helado, por favor. Me encanta el de chocolate.
+Quem pergunta "¿Qué van a tomar?" é, provavelmente:|um camarero|um médico|um taxista|um professor|um vizinho|A|A pergunta é típica de quem atende clientes em restaurante.
+O cliente NÃO pediu:|salada|peixe|água|sorvete|flan|E|Ele pediu ensalada, pescado, agua e helado. O flan só foi citado como opção.
+Em "Hay flan, fruta y helado", usa-se "hay" porque:|indica a existência de elementos indeterminados|localiza algo já conhecido|é imperativo|é gerúndio|expressa obrigação|A|"Hay" indica existência de algo não determinado; "estar" localiza algo conhecido.
+"Tráigame" é:|imperativo de usted com pronome átono colado|gerúndio|infinitivo|presente de nosotros|imperativo negativo|A|Traer → traiga (usted) + me. No afirmativo, o pronome vai colado e a palavra recebe acento.
+#Texto 3 – Correo de Lucía¶Hola, Marta: ¿Cómo estás? Te escribo desde mi nueva casa. Tiene tres habitaciones: un dormitorio, un salón y una cocina pequeña. En el salón hay un sofá y una mesa, pero no hay ningún armario. El baño está al lado del dormitorio. Cerca de casa hay una farmacia y correos. Este fin de semana voy a comprar una lavadora. ¿Vienes a verme?
+Segundo Lucía, o que há no salão?|um armário e um sofá|um sofá e uma mesa|uma geladeira|uma máquina de lavar|uma cama|B|O texto diz: "En el salón hay un sofá y una mesa".
+"No hay ningún armario" significa que:|existe um armário|existem vários armários|não existe nenhum armário|o armário está no banheiro|ela vai comprar um armário|C|Ningún (apócope de ninguno) com "no" reforça a negação: nenhum.
+"Voy a comprar una lavadora" expressa:|hábito|futuro próximo|passado|ação em curso|obrigação|B|Ir a + infinitivo indica futuro próximo.
+O verbo "vienes" em "¿Vienes a verme?" está na:|1ª pessoa do singular|2ª pessoa do singular (tú)|3ª pessoa do singular|1ª do plural|forma imperativa|B|Venir (e→ie): yo vengo, tú vienes, él viene.
+#Texto 4 – Mi rutina¶Normalmente me levanto a las siete, me ducho y desayuno café con tostadas. Suelo ir al trabajo en autobús. Antes de comer, siempre hago ejercicio. Los fines de semana, mi familia y yo comemos en casa de mis abuelos. Ahora estoy preparando la cena y escuchando música.
+Qual construção do texto expressa hábito?|estoy preparando|suelo ir|estoy escuchando|voy a cenar|tengo que ir|B|Soler + infinitivo = costumar.
+"Estoy preparando" é formada por:|estar + gerúndio|ir a + infinitivo|tener que + infinitivo|hay que + infinitivo|soler + infinitivo|A|Estar + gerúndio expressa ação em desenvolvimento no momento da fala.
+Em "Antes de comer, siempre hago ejercicio", o exercício ocorre:|depois da refeição|antes da refeição|durante a refeição|nunca|só aos fins de semana|B|"Antes de + infinitivo" indica anterioridade.
+#Texto 5 – Por teléfono¶— ¿Dígame?¶— Hola, buenas tardes. Quisiera hablar con Ana, por favor.¶— Ahora no está. ¿Quiere dejarle un recado?¶— Sí. Dígale que la semana que viene tengo que viajar y que la llamo mañana por la tarde.
+A fórmula "¿Dígame?" é usada para:|atender uma ligação|se despedir|pedir comida|marcar consulta|reclamar|A|¿Diga?/¿Dígame? são fórmulas de atendimento telefônico.
+"La semana que viene" refere-se a:|semana passada|esta semana|próxima semana|ontem|anteontem|C|É expressão de tempo futuro: a semana que vem.
+"Dígale" é:|imperativo de usted do verbo decir, com pronome|imperativo negativo de tú|presente de nosotros|gerúndio|infinitivo|A|Decir → diga (usted) + le, colado ao verbo.
+#Texto 6 – El tiempo en Sevilla¶En Sevilla, en verano hace mucho calor y casi nunca llueve. En invierno hace frío, pero no nieva. La playa está a unos 100 kilómetros de la ciudad. En primavera hay muchas flores.
+Segundo o texto, no verão em Sevilha:|faz muito frio|neva|faz muito calor|chove todos os dias|venta o tempo todo|C|"En verano hace mucho calor".
+"Casi nunca llueve" significa:|chove sempre|quase nunca chove|chove às vezes|nunca chove|chove demais|B|Casi nunca = quase nunca.
+"A unos 100 kilómetros de la ciudad" expressa:|distância|tempo|preço|quantidade de comida|frequência|A|A estrutura "estar a + medida + de" indica distância.
+Analise as afirmativas:¶I. "Me duele la cabeza" está correta.¶II. "Me interesan las novelas" está correta.¶III. "Me encanta las películas" está correta.|A|III está errada: "las películas" é plural, então "me encantan". Doler, interesar e encantar funcionam como gustar.
+Analise as afirmativas:¶I. "Estudio muy."¶II. "Hace mucho calor."¶III. "Es muy tarde."|C|I está errada: "muy" não acompanha verbo (estudio mucho). "Mucho" vai com verbos e substantivos; "muy" com adjetivos e advérbios.
+Analise as afirmativas:¶I. Yo vengo de Brasil.¶II. Tú vuelves a las seis.¶III. Nosotros volvemos cansados.|E|Todas corretas: venir tem 1ª pessoa irregular (vengo); volver é o→ue, exceto em nosotros/vosotros.
+Analise as afirmativas:¶I. "Hay que" exige sujeito: "hay que yo estudiar".¶II. "Tener que" concorda com o sujeito.¶III. "Deber + infinitivo" expressa obrigação.|C|I está errada: "hay que + infinitivo" é impessoal, sem sujeito.
+Analise as afirmativas:¶I. Si tengo tiempo, voy al cine.¶II. Si hace sol, fuera a la playa.¶III. Si llueve, me quedo en casa.|B|II está errada: a condicional estudada é si + presente, presente (si hace sol, voy a la playa).
+Analise as afirmativas:¶I. ¿Cuántos años tienes?¶II. ¿Cuál libro quieres?¶III. ¿Cómo te llamas?|B|II está errada: antes de substantivo usa-se "qué" (¿Qué libro quieres?). "Cuál" é usado sozinho/com ser.
+Analise as afirmativas:¶I. "Esto casa es bonita."¶II. "Aquella ventana está lejos."¶III. "Ese chico está a tu lado."|C|I está errada: "casa" é feminina, então "esta casa". "Esto" é neutro e não acompanha substantivo.
+Analise as afirmativas:¶I. Este libro es mío.¶II. Esas gafas son tuyas.¶III. Estas casas son nuestro.|A|III está errada: casas é feminino plural → "nuestras".
+Analise as afirmativas:¶I. Hay una panadería en mi calle.¶II. La panadería hay en mi calle.¶III. Mi casa está cerca del parque.|B|II está errada: com artigo definido ("la panadería") usa-se "está", não "hay".
+Analise as afirmativas:¶I. No tengo ningún amigo allí.¶II. ¿Tienes alguna duda?¶III. No quiero ninguno libros.|A|III está errada: "ninguno" não se usa com substantivo plural; seria "no quiero ningún libro".
+Analise as afirmativas:¶I. Gerúndio de pedir: pidiendo.¶II. Gerúndio de leer: leendo.¶III. Gerúndio de dormir: durmiendo.|B|II está errada: o "i" entre vogais vira "y": leyendo.
+Analise as afirmativas:¶I. "No hables" é imperativo negativo de tú.¶II. "Ven aquí" é imperativo afirmativo de tú.¶III. "No pon eso" é correto.|A|III está errada: negativo de tú usa subjuntivo: "no pongas eso".
+Analise as afirmativas:¶I. "Dámelo" é correto.¶II. "No me lo des" é correto.¶III. "Siéntate" é correto.|E|Afirmativo: pronomes colados (dámelo, siéntate). Negativo: pronomes antes do verbo (no me lo des).
+Analise as afirmativas:¶I. Antes de salir, cierro la puerta.¶II. Después de comiendo, me lavo los dientes.¶III. Antes de desayunar, me ducho.|B|II está errada: depois de "después de" vem infinitivo (después de comer).
+Analise as afirmativas:¶I. Solemos cenando a las nueve.¶II. Voy a estudiar mañana.¶III. Soy a estudiar mañana.|D|Só II está correta. Soler + infinitivo (solemos cenar) e ir a + infinitivo (voy a estudiar).
+Analise as afirmativas:¶I. La fiesta es en mi casa.¶II. Hoy es lunes.¶III. El concierto está en el teatro.|A|III está errada: para localizar eventos usa-se "ser" (el concierto es en el teatro).
+Analise as afirmativas:¶I. El zumo es una bebida.¶II. La lechuga es una fruta.¶III. La leche es una bebida.|B|II está errada: lechuga é alface (verdura), não fruta.
+Analise as afirmativas:¶I. La cena é a refeição da noite.¶II. La comida é a refeição do meio-dia, na Espanha.¶III. El desayuno é a refeição da noite.|C|III está errada: desayuno é o café da manhã. I e II estão corretas.
+Analise as afirmativas:¶I. La rodilla é parte da perna.¶II. Escribimos con los pies.¶III. Hablamos com la boca.|B|II está errada: escrevemos com as mãos (las manos).
+Analise as afirmativas:¶I. Fiebre = febre.¶II. Tos = tosse.¶III. Dolor = dor.|E|Todas corretas.
+Analise as afirmativas:¶I. Una docena son 12.¶II. Medio kilo son 500 g.¶III. Un cuarto de litro son 500 ml.|A|III está errada: um quarto de litro = 250 ml.
+Analise as afirmativas:¶I. El cuchillo sirve para cortar.¶II. El tenedor es a colher.¶III. La servilleta é o guardanapo.|B|II está errada: tenedor = garfo; colher = cuchara.
+Analise as afirmativas:¶I. La nevera conserva alimentos.¶II. La lavadora lava la ropa.¶III. La tostadora tuesta el pan.|E|Todas corretas.
+Analise as afirmativas:¶I. En la cocina cocinamos.¶II. En el baño dormimos.¶III. En el salón vemos la tele.|B|II está errada: dormimos no dormitorio.
+Analise as afirmativas:¶I. 1200 = mil doscientos.¶II. 3000 = tres mil.¶III. 5000 = cinco miles.|A|III está errada: "mil" é invariável: cinco mil.
+Complete: "Mis padres ___ ver la tele por la noche."|suele|solemos|suelen|sueles|suelo|C|Soler (o→ue); sujeito "mis padres" (3ª plural) → suelen.
+Complete: "A mí no me ___ nada ir a la playa hoy."|apetecen|apetece|apeteces|apetecer|apetezco|B|Apetecer funciona como gustar; o que "apetece" é "ir" (infinitivo) → singular.
+Complete: "¿Dónde ___ el museo?"|hay|es|está|son|estoy|C|Localização de algo conhecido (el museo) → estar.
+Complete: "— ¿De quién es esa mochila? — Es ___."|mía|mi|mías|mío|me|A|Posesivo tônico após ser; mochila (fem. sing.) → mía.
+Complete: "— ¿___ prefieres, té o café?"|Qué|Cuál|Cuáles|Cuánto|Dónde|B|Para escolher entre opções conhecidas usa-se "cuál".
+Complete: "— ¿___ cuesta el billete?"|Cuántas|Cuántos|Cuánto|Cuál|Cuándo|C|Pergunta de preço/quantidade com verbo: "cuánto".
+Complete: "Mañana ___ a ir al médico."|voy|soy|estoy|tengo|hago|A|Futuro próximo: ir a + infinitivo → voy a ir.
+Gerúndio de "pedir":|pedindo|pidiendo|pediendo|pidendo|pedendo|B|Verbos em -ir com e→i na raiz: pidiendo.
+Gerúndio de "decir":|deciendo|dicendo|diciendo|dizendo|decendo|C|Decir faz e→i no gerúndio: diciendo.
+Imperativo afirmativo (tú) de "venir":|viene|vienes|ven|venga|vengas|C|Imperativo irregular de tú: ven.
+Imperativo afirmativo (tú) de "decir":|di|dice|dices|diga|dí|A|Imperativo irregular de tú: di (sem acento).
+"No ___ tarde" (tú, llegar):|llegas|llega|llegues|llegue|llegar|C|Imperativo negativo de tú usa a forma do subjuntivo: no llegues.
+"Siéntate" é imperativo de qual verbo e pessoa?|sentarse, tú afirmativo|sentarse, usted|sentir, tú|sentarse, nosotros|sentirse, vosotros|A|Sentarse (e→ie) → siéntate: tú afirmativo com pronome colado e acento.
+"Por favor, ___ la ventana" (usted, cerrar):|cierra|cierre|cierras|cerrar|cerrando|B|Usted usa subjuntivo no imperativo: cierre.
+Forma correta do imperativo negativo de "levantarse" (tú):|no levantes te|no te levantes|no te levanta|no levántate|no te levantas|B|No negativo os pronomes vêm antes do verbo: no te levantes.
+Forma correta de "lavarse las manos" no imperativo afirmativo (tú):|te lava|lava te|lávate|lavate|te lávate|C|No afirmativo o pronome vai colado ao verbo e a palavra recebe acento: lávate.
+Complete: "Si ___ hambre, come algo."|tienes|tendrías|tuvieras|tengas|tener|A|Si + presente, presente: tienes.
+Complete: "Si ___ frío, me pongo un abrigo."|hará|hiciera|hace|haga|hacía|C|Si + presente de indicativo: hace.
+Complete: "No hay ___ estudiante en clase."|ninguno|alguno|ningún|algún|ningunos|C|Ningún (apócope) antes de substantivo masculino singular.
+Complete: "¿Hay ___ libros en la mesa?"|algún|algunos|ninguno|alguna|ningún|B|Libros é masculino plural → algunos.
+Complete: "En mi ciudad ___ dos hospitales."|está|están|es|hay|son|D|Existência de algo indeterminado (dos hospitales) → hay.
+Complete: "Los hospitales ___ cerca del centro."|hay|está|están|es|son|C|Localização de algo determinado (los hospitales) → están.
+Complete: "Mi hermano trabaja ___ y casi no descansa."|muy|mucho|mucha|muchos|muchas|B|Depois de verbo usa-se "mucho" (invariável); "muy" só acompanha adjetivos e advérbios.
+Complete: "Hay ___ gente en la playa."|muy|mucho|mucha|muchos|muchas|C|Gente é feminino singular: mucha gente.
+Assinale a frase que expressa obrigação IMPESSOAL:|Tengo que salir.|Debes salir.|Hay que salir.|Voy a salir.|Suelo salir.|C|"Hay que + infinitivo" não tem sujeito definido.
+Qual fórmula é usada para atender o telefone?|¿Adiós?|¿Gracias?|¿Perdón?|¿Dígame?|¿Hasta luego?|D|¿Diga?/¿Dígame? são as fórmulas de atendimento.
+Complete: "Para la tos puedo tomar ___."|un jarabe|un tenedor|una lavadora|una silla|un plato|A|Jarabe = xarope, remédio para tosse.
+Complete: "En mi tiempo libre me gusta ___ al fútbol."|jugar|hacer|tocar|poner|ir|A|Jugar a + esporte/jogo.
+Complete: "Compro ___ de leche en el supermercado."|una docena|un kilo|un metro|un litro|un grado|D|Líquidos são medidos em litros.
+Complete: "Pongo la mesa: el plato, el vaso, la ___ y el tenedor."|lavadora|nevera|cuchara|almohada|puerta|C|Cuchara faz parte do serviço de mesa.
+Complete: "Uso el ___ para despertarme por la mañana."|despertador|horno|lavavajillas|sofá|grifo|A|Despertador = despertador.
+Para calentar comida rápido, uso:|la plancha|el microondas|la lavadora|el armario|la nevera|B|Microondas = micro-ondas.
+Los platos se lavan en el:|dormitorio|pasillo|fregadero|sofá|balcón|C|Fregadero = pia da cozinha.
+"___ la puerta" (fechar):|Encender|Cerrar|Apagar|Enchufar|Cargar|B|Cerrar = fechar.
+Complete: "El supermercado está ___ del banco (em frente)."|enfrente|dentro|debajo|encima|lejos|A|Enfrente de = em frente a.
+Complete: "El libro está ___ la mesa (sobre)."|encima de|debajo|lejos|dentro|fuera|A|Encima de = em cima de.
+Para sacar dinero, voy al:|mercado|correos|hospital|banco|colegio|D|Banco = banco, serviço da cidade.
+2025 em espanhol:|dos mil veinticinco|doscientos veinticinco|dos mil y veinticinco|mil veinticinco|veinte veinticinco|A|2000 = dos mil; 25 = veinticinco.
+15.000 em espanhol:|cincuenta mil|mil quince|quince mil|quinientos mil|quince millones|C|15 = quince; 1000 = mil.
+Complete: "En ___ las hojas de los árboles caen."|primavera|verano|invierno|ayer|otoño|E|Outono = otoño.
+Complete: "En Rusia, en invierno ___ mucho frío."|está|hace|tiene|es|hay|B|Clima: hace frío/calor.
+"Dos veces por semana" em espanhol:|todos los días|dos veces a la semana|casi nunca|a veces|siempre|B|Expressão de frequência: dos veces a la semana.
+Complete: "Primero abro el libro; ___ leo el texto; por último respondo."|ayer|antes|nunca|luego|aunque|D|Luego = depois; serve para ordenar o discurso.
+Qual expressão se refere ao futuro?|anteayer|hace una semana|el año pasado|pasado mañana|ayer|D|Pasado mañana = depois de amanhã.`.split("\n");
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+/* ===== Supabase: sincronização na nuvem ===== */
+const SUPABASE_URL='https://svfcydzdsqdfoskwezhv.supabase.co';
+const SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN2ZmN5ZHpkc3FkZm9za3dlemh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMzOTA4NzYsImV4cCI6MjEwODk2Njg3Nn0.Roy3ucD5c2EO5b7zZGfr83XRtsA17ou9GMk6MHQfgyQ';
+let sb=null;
+try{sb=supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY)}catch(e){console.warn('Supabase indisponível; usando só o armazenamento local.',e)}
+const SYNC_KEYS=['esp.p','esp.ck','esp.h','esp2.th'];
+let SB_USER=null;const sbTimers={};
+const ST={get(k,d){try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}},
+set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}if(sb&&SB_USER&&SYNC_KEYS.includes(k))pushDebounced(k,v)}};
+function pushDebounced(k,v){clearTimeout(sbTimers[k]);sbTimers[k]=setTimeout(async()=>{
+const{error}=await sb.from('app_state').upsert({user_id:SB_USER.id,key:k,value:v},{onConflict:'user_id,key'});
+if(error)console.warn('sync',k,error.message)},800)}
+async function pullAll(){const{data,error}=await sb.from('app_state').select('key,value');
+if(error)return console.warn(error.message);
+let changed=false;const remote=Object.fromEntries((data||[]).map(r=>[r.key,r.value]));
+for(const k of SYNC_KEYS){if(remote[k]!==undefined){const rem=JSON.stringify(remote[k]);
+if(localStorage.getItem(k)!==rem){localStorage.setItem(k,rem);changed=true}}
+else if(localStorage.getItem(k)){pushDebounced(k,JSON.parse(localStorage.getItem(k)))}}
+if(changed)location.reload()}
+async function loginEmail(){const email=prompt('Seu e-mail para entrar:');if(!email)return;
+const{error}=await sb.auth.signInWithOtp({email,options:{emailRedirectTo:location.href.split('#')[0]}});
+alert(error?error.message:'Link enviado! Abra o e-mail neste aparelho.')}
+async function saveRunCloud(score,total,seconds,mode,answers){if(!sb||!SB_USER)return;
+const{error}=await sb.rpc('save_quiz_run',{p_score:score,p_total:total,p_seconds:seconds,p_mode:mode,p_answers:answers});
+if(error)console.warn('quiz',error.message)}
+if(sb)sb.auth.onAuthStateChange((_e,session)=>{SB_USER=session?.user||null;if(SB_USER)pullAll()});
+window.addEventListener('DOMContentLoaded',()=>{if(!sb)return;const b=document.createElement('button');b.id='cloud';b.textContent='☁';b.title='Sincronizar na nuvem';b.style.cssText='--c:var(--ink);padding:6px 10px';
+b.onclick=async()=>{if(SB_USER){if(confirm('Sair da sincronização?'))await sb.auth.signOut()}else loginEmail()};
+$('#nav').appendChild(b)});
+const root=document.documentElement;let TH=ST.get('esp2.th','auto');
+function applyTh(){TH==='auto'?root.removeAttribute('data-theme'):root.dataset.theme=TH;const b=$('#th');if(b)b.textContent={auto:'◐',dark:'☾',light:'☀'}[TH]}
+const VIEWS={mapa:['Mapa','--c1'],sim:['Simulado','--c2'],cola:['Cola','--c3']};
+$('#nav').innerHTML=Object.keys(VIEWS).map(k=>`<button data-v="${k}" style="--c:var(${VIEWS[k][1]})"><span class="k">${VIEWS[k][0]}</span></button>`).join('')+'<button id="th" aria-label="Tema"></button>';
+applyTh();$('#th').onclick=()=>{TH={auto:'dark',dark:'light',light:'auto'}[TH];ST.set('esp2.th',TH);applyTh()};
+function show(v){if(!VIEWS[v])v='mapa';closeT();$('#v-mapa').hidden=v!=='mapa';$('#v-sim').hidden=v!=='sim';$('#v-cola').hidden=v!=='cola';if(v==='cola')renderCola();$$('#nav button[data-v]').forEach(b=>b.classList.toggle('on',b.dataset.v===v));try{history.replaceState(null,'','#'+v)}catch(e){}window.scrollTo(0,0)}
+$$('#nav button[data-v]').forEach(b=>b.onclick=()=>show(b.dataset.v));
+/* ===== mapa ===== */
+const cards=$$('#pool .card');let P=ST.get('esp.p',{done:[]}),CK=ST.get('esp.ck',{}),cur=-1;
+const full=i=>$('h2',cards[i]).textContent.replace(/^\S+\s+/,'').trim(),short=i=>{const t=full(i),s=t.split(':')[0];return s.length>10?s:t};
+const num=i=>$('.num',cards[i]).textContent;
+const LN=[
+{n:'Verbos e presente',s:[0,1,13,14],p:[[500,380],[410,290],[410,150],[150,150]]},
+{n:'Perguntas e quantidade',s:[2,5,9],p:[[500,380],[590,290],[590,150],[850,150]]},
+{n:'Perífrasis, condição e instruções',s:[3,4,10,11,12],p:[[500,380],[670,380],[750,460],[750,640]]},
+{n:'Pronomes e localização',s:[6,7,8,15],p:[[500,380],[330,380],[250,460],[250,640]]},
+{n:'Revisão final',s:[16],p:[[500,380],[500,540],[500,640]]}];
+function along(p,d){for(let i=0;i<p.length-1;i++){const[a,b]=p[i],[c,e]=p[i+1],l=Math.hypot(c-a,e-b);if(d<=l||i===p.length-2){const t=Math.min(d/l,1);return{x:a+(c-a)*t,y:b+(e-b)*t,h:Math.abs(e-b)<1}}d-=l}}
+const word='GRAMÁTICA'.split('').map((c,i)=>`<span style="color:var(--c${i%5});transform:rotate(${[-5,4,-3,5,-4,3,-5,4,-2][i]}deg)">${c}</span>`).join('');
+const red=matchMedia('(prefers-reduced-motion:reduce)').matches;
+let svg='',html='';
+LN.forEach((g,k)=>{const p=g.p,tot=p.slice(1).reduce((a,q,i)=>a+Math.hypot(q[0]-p[i][0],q[1]-p[i][1]),0),d=p.map(q=>q.join(',')).join(' L');
+svg+=`<path d="M${d}" stroke="var(--ink)" stroke-width="26" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M${d}" stroke="var(--c${k})" stroke-width="17" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`;
+if(!red)svg+=`<circle r="8" fill="var(--sf)" stroke="var(--ink)" stroke-width="3"><animateMotion path="M${d}" dur="${11+k*2}s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;0" keyTimes="0;.5;1"/></circle>`;
+const n=g.s.length;g.s.forEach((ci,j)=>{const q=along(p,105+(tot-105)*(j+.7)/(n+.1)),side=q.h?(j%2?'b':'t'):(q.x<500?'l':'r');html+=`<button class="st ${side}" data-i="${ci}" style="left:${q.x/10}%;top:${q.y/7.6}%;--c:var(--c${k})"><i></i><span>${short(ci)}</span></button>`});
+const L=p[p.length-1],B=p[p.length-2],hz=Math.abs(L[1]-B[1])<1,tx=hz?L[0]+Math.sign(L[0]-B[0])*68:L[0],ty=hz?L[1]:L[1]+28;
+html+=`<div class="tag" style="left:${tx/10}%;top:${ty/7.6}%;--c:var(--c${k})">${g.n}<small id="gs${k}"></small></div>`});
+$('#metro').innerHTML=`<svg class="ml" viewBox="0 0 1000 760" aria-hidden="true">${svg}</svg><div class="hub"><svg viewBox="0 0 100 100"><circle class="rb" cx="50" cy="50" r="46"/><circle class="rf" id="ring" cx="50" cy="50" r="46" pathLength="100" stroke-dasharray="0 100"/></svg><div><small>mapa de</small><b>${word}</b><em>del español</em><u id="cp"></u></div></div>`+html;
+$('#strips').innerHTML=LN.map((g,k)=>`<div class="strip" style="--c:var(--c${k})"><h3><b>${k+1}</b>${g.n}<small id="ss${k}"></small></h3><div class="sl">${g.s.map(i=>`<button class="sst" data-i="${i}"><i></i>${full(i)}</button>`).join('')}</div></div>`).join('');
+const gOf=i=>LN.findIndex(g=>g.s.includes(i));
+function refMap(){$$('[data-i]').forEach(n=>{const i=+n.dataset.i,d=P.done.includes(i);n.classList.toggle('d',d);$('i',n).textContent=d?'✓':num(i)});
+LN.forEach((g,k)=>{const t=g.s.filter(i=>P.done.includes(i)).length+'/'+g.s.length+' revisados';$('#gs'+k).textContent=t;$('#ss'+k).textContent=t});
+const n=P.done.length,pc=Math.round(n/cards.length*100);$('#ring').setAttribute('stroke-dasharray',pc+' 100');$('#cp').textContent=n+'/'+cards.length;$('#pt').textContent=n===cards.length?'Linha completa! 🎉':n+' de '+cards.length+' estações revisadas';ST.set('esp.p',P)}
+const KEY=[
+['Tire -ar/-er/-ir e some a terminação da pessoa. Verbos com mudança (e→ie, o→ue, e→i) mudam em todas as pessoas, menos nosotros e vosotros.','hablo · comes · vivimos · tengo · vuelvo · pido','Yo irregular: tengo, vengo, hago, digo.'],
+['Pronome (me, te, le, nos, os, les) + verbo que concorda com a COISA, não com a pessoa.','Me encanta leer · Me duelen los pies · ¿Te interesa?','Infinitivo conta como singular. Nunca: yo gusto.'],
+['MUY antes de adjetivo/advérbio. MUCHO depois do verbo. MUCHO/A/OS/AS concorda com o substantivo.','muy interesante · estudio mucho · muchas clases','Não use muy depois do verbo.'],
+['HAY QUE + infinitivo é impessoal; TENER QUE + infinitivo é pessoal; DEBER + infinitivo é dever.','Hay que estudiar · Tengo que hacer · Debes beber agua','O segundo verbo fica sempre no infinitivo. Hay que não muda.'],
+['SI + presente, presente: condição real, que pode acontecer.','Si llueve, no salimos · Si estudio, apruebo','Nada de subjuntivo nesta estrutura.'],
+['Qué (o quê), cuál/cuáles (qual, entre opções), cómo, cuándo, dónde, cuánto: sempre com acento e entre ¿ ?.','¿Cuál prefieres? · ¿Dónde está? · ¿Cuántos años tienes?','Sem acento vira conjunção ou pronome comum.'],
+['Este/ese/aquel = perto/médio/longe, e concordam com o substantivo. Esto/eso/aquello são neutros e vão sozinhos.','este libro · esa casa · aquellas ventanas · ¿Qué es esto?','Nunca esto libro, nunca esto casa.'],
+['Mío, tuyo, suyo, nuestro, vuestro concordam com a COISA possuída, não com o dono.','Estas casas son nuestras · Este libro es mío','Suyo é ambíguo: esclareça com es de ella.'],
+['HAY = existência (algo não identificado). ESTÁ/ESTÁN = localização de algo conhecido.','Hay una farmacia aquí · La farmacia está al lado del banco','Não use hay com el/la/los/las.'],
+['ALGÚN/ALGUNA = algum. NINGÚN/NINGUNA = nenhum. A negativa usa no + ningún.','¿Tienes alguna duda? · No tengo ningún libro','Ningún só no singular; ninguno aparece sozinho, sem substantivo.'],
+['ESTAR + gerúndio: ação acontecendo agora. -ar → -ando; -er/-ir → -iendo.','Estoy estudiando · Están pidiendo ayuda','Irregulares: leyendo, durmiendo, pidiendo.'],
+['Afirmativo: pronomes colados ao verbo. Negativo: pronomes antes do verbo.','Dámelo · Siéntate · No me lo des','Negativo de tú usa subjuntivo: no pongas, não no pon.'],
+['ANTES DE / DESPUÉS DE + infinitivo.','Antes de salir, cierro la puerta · Después de comer, estudio','Nunca gerúndio ou verbo conjugado: después de comiendo está errado.'],
+['SOLER + infinitivo = costumar. Muda o→ue.','suelo · sueles · suele · solemos · soléis · suelen cenar','Depois de soler vem infinitivo, não gerúndio: solemos cenar.'],
+['IR A + infinitivo = futuro próximo.','Voy a estudiar mañana · Vamos a viajar','É ir a, nunca ser a.'],
+['SER para hora, data e para localizar EVENTOS. ESTAR para localizar coisas e lugares.','Hoy es lunes · El concierto es en el teatro','Evento usa ser; objeto ou lugar usa estar.'],
+['Feche o checklist, faça o mini teste e refaça no simulado as questões que errou.','Meta: 70% ou mais no simulado','Revise primeiro as estações que ainda estão sem ✓.']];
+const kh=(i,t)=>{const k=KEY[i];return`${t?`<h3>${num(i)} · ${short(i)}</h3>`:'<b class="k1">Em 10 segundos</b>'}<p>${k[0]}</p><div class="ex">${k[1]}</div><div class="wr">⚠ ${k[2]}</div>`};
+function setKey(i){$$('#dwb .key').forEach(e=>e.remove());const d=document.createElement('div');d.className='key';d.innerHTML=kh(i,0);$('#dwb').prepend(d)}
+function renderCola(){const w=Object.entries(H.q).filter(([,v])=>v[0]<v[1]).sort((a,b)=>(b[1][1]-b[1][0])-(a[1][1]-a[1][0])).slice(0,5);
+$('#v-cola').innerHTML=`<div class="hd"><h1>Cola da <em>prova</em></h1><button class="btn" id="pr">Imprimir / PDF</button></div><p class="mu">O essencial de cada estação: regra, exemplo e o erro que mais derruba. Toque num cartão para abrir o conteúdo completo.</p>`+(w.length?`<div class="cx" style="--c:var(--bad)"><h2>Seus pontos fracos</h2>${w.map(([id,v])=>`<p style="margin:8px 0"><b>${Q[id].q.split('¶')[1]||Q[id].q.split('¶')[0]}</b><br><span class="mu">Errou ${v[1]-v[0]} de ${v[1]} vezes. ${Q[id].e}</span></p>`).join('')}</div>`:'')+`<div class="cg">${KEY.map((k,i)=>`<div class="key" data-o="${i}" style="--c:var(--c${gOf(i)})">${kh(i,1)}</div>`).join('')}</div>`;
+$('#pr').onclick=()=>print();$$('#v-cola [data-o]').forEach(n=>n.onclick=()=>{show('mapa');openT(+n.dataset.o)})}
+function putBack(i){const c=cards[i];$('#pool').insertBefore(c,$('#pool').children[i]||null)}
+function openT(i){if(cur>=0)putBack(cur);cur=i;const k=gOf(i);$('#dwb').appendChild(cards[i]);setKey(i);$('#dwb').scrollTop=0;$('#dw').style.setProperty('--c','var(--c'+k+')');$('#dwg').textContent=LN[k].n;$('#dwn').textContent=(i+1)+' / '+cards.length;$('#pvT').disabled=i===0;$('#nxT').disabled=i===cards.length-1;rv();document.body.classList.add('dwo');document.body.style.overflow='hidden'}
+function rv(){const d=P.done.includes(cur),b=$('#rvT');b.textContent=d?'Revisado ✓':'Marcar revisado';b.classList.toggle('ok',d)}
+function closeT(){if(cur<0)return;putBack(cur);$$('#dwb .key').forEach(e=>e.remove());cur=-1;document.body.classList.remove('dwo');document.body.style.overflow=''}
+$$('[data-i]').forEach(n=>n.onclick=()=>openT(+n.dataset.i));$('#bd').onclick=closeT;$('#dwx').onclick=closeT;$('#pvT').onclick=()=>openT(cur-1);$('#nxT').onclick=()=>openT(cur+1);
+$('#rvT').onclick=()=>{P.done=P.done.includes(cur)?P.done.filter(x=>x!==cur):[...P.done,cur];refMap();rv()};
+document.addEventListener('keydown',e=>{if(cur<0||e.target.matches('input,textarea'))return;if(e.key==='Escape')closeT();if(e.key==='ArrowRight'&&cur<cards.length-1)openT(cur+1);if(e.key==='ArrowLeft'&&cur>0)openT(cur-1)});
+$$('.checklist input').forEach((x,i)=>{x.checked=!!CK[i];x.onchange=()=>{CK[i]=x.checked;ST.set('esp.ck',CK)}});
+$('#search').oninput=e=>{const q=e.target.value.toLocaleLowerCase('pt-BR').trim();$$('[data-i]').forEach(n=>{const c=cards[+n.dataset.i];n.classList.toggle('dim',q!==''&&!(c.textContent+' '+(c.dataset.key||'')).toLocaleLowerCase('pt-BR').includes(q))})};
+refMap();
+/* ===== simulado ===== */
+const AL='ABCDE',DEF=['Apenas I e II','Apenas I e III','Apenas II e III','Apenas II','I, II e III'],TC=[4,4,4,3,3,3];
+const KL={txt:'Interpretação de texto',af:'Afirmativas',cmp:'Gramática e vocabulário'},KC={txt:'--c2',af:'--c1',cmp:'--c0'};
+const Q=[];let ct=null,rem=0,ti=0;
+RAW.forEach(l=>{if(l[0]==='#'){ct=l.slice(1);rem=TC[ti++];return}const f=l.split('|');const o=f.length===3?{q:f[0],o:DEF,a:AL.indexOf(f[1]),e:f[2]}:{q:f[0],o:f.slice(1,6),a:AL.indexOf(f[6]),e:f[7]};o.id=Q.length;if(rem>0){o.t=ct;rem--}o.k=o.t?'txt':o.q.startsWith('Analise')?'af':'cmp';Q.push(o)});
+const V=$('#v-sim');let H=ST.get('esp.h',{runs:[],q:{},wrong:[]}),sess=null,tick=null,cfg={f:'all',m:'imm',n:0,sh:true};
+const pc=(a,b)=>b?Math.round(a/b*100):0,fmt=s=>Math.floor(s/60)+':'+String(s%60).padStart(2,'0'),tone=p=>p>=70?'':p>=50?' mid':' lo';
+const txb=q=>{if(!q.t)return'';const[t,...r]=q.t.split('¶');return`<div class="tx"><b>${t}</b>${r.join('<br>')}</div>`};
+function groups(ids){const g=[];let last=null;ids.forEach(id=>{const t=Q[id].t;if(t&&t===last)g[g.length-1].push(id);else g.push([id]);last=t});return g}
+function start(ids,cut){let g=groups(ids);if(cfg.sh){for(let i=g.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[g[i],g[j]]=[g[j],g[i]]}}ids=g.flat();if(cut&&cut<ids.length)ids=ids.slice(0,cut);sess={ids,pos:0,ans:{},m:cfg.m,t0:Date.now(),fin:false};clearInterval(tick);tick=setInterval(()=>{const e=$('#tm');if(e)e.textContent='⏱ '+fmt(Math.round((Date.now()-sess.t0)/1000))},1000);draw()}
+function setup(){const T=Object.values(H.q).reduce((a,v)=>[a[0]+v[0],a[1]+v[1]],[0,0]),acc=pc(T[0],T[1]),n=k=>Q.filter(q=>k==='all'||q.k===k).length;
+const cat=Object.keys(KL).map(k=>{const v=Object.entries(H.q).filter(([i])=>Q[i].k===k).reduce((a,[,x])=>[a[0]+x[0],a[1]+x[1]],[0,0]);return`<div class="bar" style="--c:var(${KC[k]})">${KL[k]} <span class="mu">· ${v[1]?v[0]+'/'+v[1]+' ('+pc(v[0],v[1])+'%)':'sem dados'}</span><div><i style="width:${pc(v[0],v[1])}%"></i></div></div>`}).join('');
+const hs=H.runs.slice(-10).map(r=>`<span class="${tone(pc(r.s,r.t)).trim()}" style="height:${Math.max(pc(r.s,r.t),6)}%" title="${r.d}"><i>${pc(r.s,r.t)}</i></span>`).join('');
+const weak=Object.entries(H.q).filter(([,v])=>v[0]<v[1]).sort((a,b)=>(b[1][1]-b[1][0])-(a[1][1]-a[1][0])).slice(0,15).map(e=>+e[0]);
+const ch=(nm,v,t,on)=>`<label class="chip"><input type="radio" name="${nm}" value="${v}"${on?' checked':''}><span>${t}</span></label>`;
+V.innerHTML=`<div class="hd"><h1>Hora do <em>simulado</em></h1><p class="hint">${Q.length} questões · ${TC.length} textos-base</p></div>
+<div class="dash"><div class="cx" style="--c:var(--c0)"><h2>Seu desempenho</h2><div class="kp"><div class="ring${T[1]?'':' none'}" style="--p:${acc}"><b>${T[1]?acc+'%':'—'}</b></div><ul><li><b>${T[0]}</b> acertos</li><li><b>${T[1]-T[0]}</b> erros <span class="mu">(${T[1]?100-acc:0}%)</span></li><li><b>${H.runs.length}</b> simulados feitos</li></ul></div><div class="bars">${cat}</div>${hs?`<div class="fl">Últimos simulados (%)</div><div class="hist">${hs}</div>`:''}</div>
+<div class="cx" style="--c:var(--c1)"><h2>Monte o seu</h2><div class="fl" style="margin-top:0">Conteúdo</div><div class="chips">${[['all','Todas'],['txt',KL.txt],['af',KL.af],['cmp',KL.cmp]].map(x=>ch('f',x[0],x[1]+' · '+n(x[0]),cfg.f===x[0])).join('')}</div><div class="fl">Quantidade</div><div class="chips">${[[0,'Todas'],[10,'10'],[20,'20'],[30,'30']].map(x=>ch('n',x[0],x[1],cfg.n===x[0])).join('')}</div><div class="fl">Modo</div><div class="chips">${ch('m','imm','Feedback imediato',cfg.m==='imm')}${ch('m','exam','Modo prova (gabarito no final)',cfg.m==='exam')}</div><div class="fl">Ordem</div><div class="chips">${ch('sh','1','Embaralhar',cfg.sh)}${ch('sh','0','Original',!cfg.sh)}</div><div class="ctl" style="justify-content:flex-start"><button class="btn p" id="go" style="--c:var(--c1)">Iniciar simulado →</button>${H.wrong.length?`<button class="btn" id="rw">Refazer as ${H.wrong.length} erradas</button>`:''}${weak.length?`<button class="btn" id="wk">Treinar pontos fracos</button>`:''}</div></div></div>`;
+$$('input[name=f]',V).forEach(x=>x.onchange=()=>cfg.f=x.value);$$('input[name=n]',V).forEach(x=>x.onchange=()=>cfg.n=+x.value);$$('input[name=m]',V).forEach(x=>x.onchange=()=>cfg.m=x.value);$$('input[name=sh]',V).forEach(x=>x.onchange=()=>cfg.sh=x.value==='1');
+$('#go').onclick=()=>start(Q.filter(q=>cfg.f==='all'||q.k===cfg.f).map(q=>q.id),cfg.n);const r=$('#rw');if(r)r.onclick=()=>start(H.wrong.slice());const w=$('#wk');if(w)w.onclick=()=>start(weak)}
+function ques(){const id=sess.ids[sess.pos],q=Q[id],a=sess.ans[id],imm=sess.m==='imm',lock=imm&&a!=null,last=sess.pos===sess.ids.length-1,na=Object.keys(sess.ans).length,ok=sess.ids.filter(x=>sess.ans[x]===Q[x].a).length;
+const mp=sess.ids.map((x,i)=>{const v=sess.ans[x];return`<button class="${v==null?'':imm?(v===Q[x].a?'ok':'no'):'a'}${i===sess.pos?' cur':''}" data-p="${i}">${i+1}</button>`}).join('');
+let h=`<div class="qtop"><span class="pill">Questão ${sess.pos+1}/${sess.ids.length}</span><span class="pill" id="tm">⏱ ${fmt(Math.round((Date.now()-sess.t0)/1000))}</span>${imm?`<span class="pill gd">✓ ${ok}</span><span class="pill bd2">✗ ${na-ok}</span>`:`<span class="pill">${na} respondidas</span>`}<span class="mu">${KL[q.k]}</span></div><div class="pb"><i style="width:${na/sess.ids.length*100}%"></i></div><details><summary>Mapa de questões</summary><div class="qmap">${mp}</div></details>${txb(q)}<div class="cx" style="--c:var(${KC[q.k]});margin-top:12px"><p class="qs">${q.q.replace(/¶/g,'<br>')}</p>`+q.o.map((o,i)=>{const c=!imm?(a===i?' sel':''):a==null?'':i===q.a?' ok':i===a?' no':'';return`<button class="op${c}" data-i="${i}"${lock?' disabled':''}><b>${AL[i]}</b><span>${o}</span></button>`}).join('');
+if(lock)h+=a===q.a?'<div class="fb g">✓ Resposta correta!</div>':`<div class="fb"><b>Correção:</b> gabarito, letra ${AL[q.a]}. ${q.e}</div>`;
+h+=`</div><div class="ctl"><button class="btn" id="pv"${sess.pos?'':' disabled'}>← Anterior</button><button class="btn" id="qt">Encerrar</button>${last?'<button class="btn p" id="fn">Finalizar ✓</button>':'<button class="btn p" id="nx">Próxima →</button>'}</div>`;
+V.innerHTML=h;$$('.op',V).forEach(b=>b.onclick=()=>{if(lock)return;sess.ans[id]=+b.dataset.i;const y=scrollY;ques();scrollTo(0,y)});$$('.qmap button',V).forEach(b=>b.onclick=()=>{sess.pos=+b.dataset.p;ques();scrollTo(0,0)});
+$('#pv').onclick=()=>{sess.pos--;ques();scrollTo(0,0)};$('#qt').onclick=()=>{if(confirm('Encerrar e voltar ao início? O progresso deste simulado será perdido.')){clearInterval(tick);sess=null;draw()}};const nx=$('#nx');if(nx)nx.onclick=()=>{sess.pos++;ques();scrollTo(0,0)};const fn=$('#fn');if(fn)fn.onclick=finish}
+function finish(){const un=sess.ids.filter(i=>sess.ans[i]==null).length;if(un&&!confirm(un+' questão(ões) sem resposta. Finalizar mesmo assim?'))return;clearInterval(tick);sess.fin=true;sess.sec=Math.round((Date.now()-sess.t0)/1000);const w=[];sess.ids.forEach(i=>{const v=H.q[i]||[0,0],c=sess.ans[i]===Q[i].a;H.q[i]=[v[0]+(c?1:0),v[1]+1];if(!c)w.push(i)});sess.w=w;H.wrong=w;H.runs.push({s:sess.ids.length-w.length,t:sess.ids.length,d:new Date().toLocaleDateString('pt-BR'),sec:sess.sec,m:sess.m});H.runs=H.runs.slice(-30);ST.set('esp.h',H);saveRunCloud(sess.ids.length-w.length,sess.ids.length,sess.sec,sess.m,sess.ids.map(i=>({id:i,correct:sess.ans[i]===Q[i].a})));draw();scrollTo(0,0)}
+function results(){const t=sess.ids.length,bl=sess.ids.filter(i=>sess.ans[i]==null).length,w=sess.w.length,s=t-w,p=pc(s,t),msg=p>=90?'Excelente! Você domina o conteúdo 🏆':p>=70?'Mandou bem! Falta pouco para a perfeição 🎉':p>=50?'Quase lá — revise as correções abaixo 💪':'Hora de voltar ao mapa e revisar as estações 🚇';
+const by=Object.keys(KL).map(k=>{const ids=sess.ids.filter(i=>Q[i].k===k);if(!ids.length)return'';const c=ids.filter(i=>sess.ans[i]===Q[i].a).length;return`<div class="bar" style="--c:var(${KC[k]})">${KL[k]} <span class="mu">· ${c}/${ids.length} (${pc(c,ids.length)}%)</span><div><i style="width:${pc(c,ids.length)}%"></i></div></div>`}).join('');
+const it=sess.ids.map((id,n)=>{const q=Q[id],a=sess.ans[id],st=a==null?'blank':a===q.a?'ok':'err',sn=(q.q.split('¶')[1]||q.q.split('¶')[0]).slice(0,80);return`<details class="it ${st}"><summary><b>${n+1}</b><span>${KL[q.k]}: ${sn}</span><em>${st==='ok'?'✓ certa':st==='err'?'✗ '+AL[a]+' → '+AL[q.a]:'— em branco'}</em></summary><div>${txb(q)}<p class="qs">${q.q.replace(/¶/g,'<br>')}</p>${q.o.map((o,i)=>`<div class="op ${i===q.a?'ok':i===a?'no':''}"><b>${AL[i]}</b><span>${o}</span></div>`).join('')}<div class="fb ${st==='ok'?'g':''}"><b>${st==='ok'?'Você acertou.':'Correção:'}</b> ${q.e}</div></div></details>`}).join('');
+V.innerHTML=`<div class="cx" style="--c:var(--c3)"><div class="big"><div class="ring" style="--p:${p}"><b>${p}%</b></div><div><h2>${s} de ${t} corretas</h2><p class="mu" style="margin:0">${msg}</p></div></div><div class="tri"><div><b style="color:var(--ok)">${s}</b><small>Acertos · ${p}%</small></div><div><b style="color:var(--bad)">${w-bl}</b><small>Erros · ${pc(w-bl,t)}%</small></div><div><b>${bl}</b><small>Em branco</small></div></div><p class="mu" style="margin:0">⏱ ${fmt(sess.sec)} no total · ${fmt(Math.round(sess.sec/t))} por questão · modo ${sess.m==='imm'?'feedback imediato':'prova'}</p><div class="bars">${by}</div><div class="ctl" style="justify-content:flex-start">${w?'<button class="btn p" id="rw" style="--c:var(--c1)">Refazer as erradas</button>':''}<button class="btn" id="nw">Novo simulado</button><button class="btn" id="bk">Revisar no mapa</button></div></div><h2 style="font:800 1.4rem var(--fh)">Correção completa</h2><div class="chips" style="margin-bottom:8px">${[['all','Todas'],['err','Erradas'],['ok','Certas'],['blank','Em branco']].map((x,i)=>`<label class="chip"><input type="radio" name="rf" value="${x[0]}"${i?'':' checked'}><span>${x[1]}</span></label>`).join('')}</div><div id="rl" data-f="all">${it}</div>`;
+$$('input[name=rf]',V).forEach(x=>x.onchange=()=>$('#rl').dataset.f=x.value);const r=$('#rw');if(r)r.onclick=()=>start(sess.w.slice());$('#nw').onclick=()=>{sess=null;draw()};$('#bk').onclick=()=>show('mapa')}
+function draw(){if(!sess)setup();else if(sess.fin)results();else ques()}
+draw();show(location.hash.slice(1));
+</script>
+</body>
+</html>
