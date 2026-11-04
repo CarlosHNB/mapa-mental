@@ -82,6 +82,8 @@ summary{cursor:pointer;font-weight:700;color:var(--c2)}.qmap{display:flex;flex-w
 .it{border:3px solid var(--ink);border-radius:14px;margin:9px 0;background:var(--sf);overflow:hidden}.it summary{display:flex;gap:10px;align-items:center;padding:9px 12px;color:var(--ink)}.it summary b{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;font:800 .8rem var(--fh);background:var(--mu)}.it.ok summary b{background:var(--ok)}.it.err summary b{background:var(--bad)}.it summary span{flex:1;font-weight:600;font-size:.92rem}.it summary em{font:700 .78rem var(--fh);font-style:normal;white-space:nowrap}.it>div{padding:2px 14px 14px}
 #rl[data-f=err] .it:not(.err),#rl[data-f=ok] .it:not(.ok),#rl[data-f=blank] .it:not(.blank){display:none}
 .key{background:color-mix(in srgb,var(--c) 14%,var(--sf));border:3px solid var(--ink);border-radius:16px 16px 16px 4px;box-shadow:4px 4px 0 var(--c);padding:12px 14px;margin:0 0 16px}.key .k1{font:800 .72rem var(--fb);letter-spacing:.1em;text-transform:uppercase;color:var(--c)}.key p{margin:3px 0 8px;font-weight:600}.key .ex{font:700 1.3rem/1.2 var(--fd)}.key .wr{font-size:.88rem;color:var(--bad);font-weight:700;margin-top:6px}.key h3{margin:0 0 6px;font:800 1rem var(--fh)}.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}.cg .key{margin:0;cursor:pointer;transition:.15s}.cg .key:hover{transform:translate(-2px,-2px)}
+
+.bar .dgb{height:auto;border:0;background:none;overflow:visible;display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:6px}.dgb .btn{padding:2px 10px;font-size:.78rem}
 @media print{#top,.srch,#dw,#bd,#pr{display:none!important}.cg .key{break-inside:avoid;box-shadow:none}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -320,109 +322,113 @@ summary{cursor:pointer;font-weight:700;color:var(--c2)}.qmap{display:flex;flex-w
 </details>
 </section></div>
 <script>
-const RAW=`#Texto 1 – En la consulta del médico¶— Buenos días, doctor. Me duele mucho la garganta y tengo fiebre desde ayer.¶— ¿Tiene tos? ¿Le duele la cabeza?¶— Sí, tengo un poco de tos y me duele la cabeza. Además, no me apetece comer nada.¶— Tiene que tomar este jarabe dos veces al día y debe beber mucha agua. Si no mejora en tres días, vuelva a la consulta.
-Segundo o texto, o paciente apresenta:|dor de estômago e tosse|dor de garganta, febre e tosse|apenas dor de cabeça|dor de ouvido e vômito|dor nas costas e febre|B|O paciente diz "me duele la garganta", "tengo fiebre" e "un poco de tos".
-No trecho "no me apetece comer nada", o paciente quer dizer que:|não tem vontade de comer|está proibido de comer|comeu demais|adora comer|vai comer algo leve|A|Apetecer = ter vontade/apetecer. Com "no", indica falta de vontade.
-A expressão "Tiene que tomar" indica:|hábito|obrigação pessoal|obrigação impessoal|ação em curso|futuro próximo|B|Tener que + infinitivo expressa obrigação pessoal (aqui, o sujeito é usted). A impessoal seria "hay que".
-"Vuelva a la consulta" é uma forma de:|imperativo afirmativo de tú|imperativo negativo de tú|imperativo afirmativo de usted|gerúndio|presente de indicativo|C|Vuelva é o imperativo de usted do verbo volver. Para tú seria "vuelve".
-#Texto 2 – En el restaurante¶— Buenas noches. ¿Qué van a tomar?¶— De primero, una ensalada y, de segundo, pescado con patatas. Para beber, agua sin gas.¶— ¿Y de postre?¶— ¿Qué postres hay?¶— Hay flan, fruta y helado.¶— Tráigame un helado, por favor. Me encanta el de chocolate.
-Quem pergunta "¿Qué van a tomar?" é, provavelmente:|um camarero|um médico|um taxista|um professor|um vizinho|A|A pergunta é típica de quem atende clientes em restaurante.
-O cliente NÃO pediu:|salada|peixe|água|sorvete|flan|E|Ele pediu ensalada, pescado, agua e helado. O flan só foi citado como opção.
-Em "Hay flan, fruta y helado", usa-se "hay" porque:|indica a existência de elementos indeterminados|localiza algo já conhecido|é imperativo|é gerúndio|expressa obrigação|A|"Hay" indica existência de algo não determinado; "estar" localiza algo conhecido.
-"Tráigame" é:|imperativo de usted com pronome átono colado|gerúndio|infinitivo|presente de nosotros|imperativo negativo|A|Traer → traiga (usted) + me. No afirmativo, o pronome vai colado e a palavra recebe acento.
-#Texto 3 – Correo de Lucía¶Hola, Marta: ¿Cómo estás? Te escribo desde mi nueva casa. Tiene tres habitaciones: un dormitorio, un salón y una cocina pequeña. En el salón hay un sofá y una mesa, pero no hay ningún armario. El baño está al lado del dormitorio. Cerca de casa hay una farmacia y correos. Este fin de semana voy a comprar una lavadora. ¿Vienes a verme?
-Segundo Lucía, o que há no salão?|um armário e um sofá|um sofá e uma mesa|uma geladeira|uma máquina de lavar|uma cama|B|O texto diz: "En el salón hay un sofá y una mesa".
-"No hay ningún armario" significa que:|existe um armário|existem vários armários|não existe nenhum armário|o armário está no banheiro|ela vai comprar um armário|C|Ningún (apócope de ninguno) com "no" reforça a negação: nenhum.
-"Voy a comprar una lavadora" expressa:|hábito|futuro próximo|passado|ação em curso|obrigação|B|Ir a + infinitivo indica futuro próximo.
-O verbo "vienes" em "¿Vienes a verme?" está na:|1ª pessoa do singular|2ª pessoa do singular (tú)|3ª pessoa do singular|1ª do plural|forma imperativa|B|Venir (e→ie): yo vengo, tú vienes, él viene.
-#Texto 4 – Mi rutina¶Normalmente me levanto a las siete, me ducho y desayuno café con tostadas. Suelo ir al trabajo en autobús. Antes de comer, siempre hago ejercicio. Los fines de semana, mi familia y yo comemos en casa de mis abuelos. Ahora estoy preparando la cena y escuchando música.
-Qual construção do texto expressa hábito?|estoy preparando|suelo ir|estoy escuchando|voy a cenar|tengo que ir|B|Soler + infinitivo = costumar.
-"Estoy preparando" é formada por:|estar + gerúndio|ir a + infinitivo|tener que + infinitivo|hay que + infinitivo|soler + infinitivo|A|Estar + gerúndio expressa ação em desenvolvimento no momento da fala.
-Em "Antes de comer, siempre hago ejercicio", o exercício ocorre:|depois da refeição|antes da refeição|durante a refeição|nunca|só aos fins de semana|B|"Antes de + infinitivo" indica anterioridade.
-#Texto 5 – Por teléfono¶— ¿Dígame?¶— Hola, buenas tardes. Quisiera hablar con Ana, por favor.¶— Ahora no está. ¿Quiere dejarle un recado?¶— Sí. Dígale que la semana que viene tengo que viajar y que la llamo mañana por la tarde.
-A fórmula "¿Dígame?" é usada para:|atender uma ligação|se despedir|pedir comida|marcar consulta|reclamar|A|¿Diga?/¿Dígame? são fórmulas de atendimento telefônico.
-"La semana que viene" refere-se a:|semana passada|esta semana|próxima semana|ontem|anteontem|C|É expressão de tempo futuro: a semana que vem.
-"Dígale" é:|imperativo de usted do verbo decir, com pronome|imperativo negativo de tú|presente de nosotros|gerúndio|infinitivo|A|Decir → diga (usted) + le, colado ao verbo.
-#Texto 6 – El tiempo en Sevilla¶En Sevilla, en verano hace mucho calor y casi nunca llueve. En invierno hace frío, pero no nieva. La playa está a unos 100 kilómetros de la ciudad. En primavera hay muchas flores.
-Segundo o texto, no verão em Sevilha:|faz muito frio|neva|faz muito calor|chove todos os dias|venta o tempo todo|C|"En verano hace mucho calor".
-"Casi nunca llueve" significa:|chove sempre|quase nunca chove|chove às vezes|nunca chove|chove demais|B|Casi nunca = quase nunca.
-"A unos 100 kilómetros de la ciudad" expressa:|distância|tempo|preço|quantidade de comida|frequência|A|A estrutura "estar a + medida + de" indica distância.
-Analise as afirmativas:¶I. "Me duele la cabeza" está correta.¶II. "Me interesan las novelas" está correta.¶III. "Me encanta las películas" está correta.|A|III está errada: "las películas" é plural, então "me encantan". Doler, interesar e encantar funcionam como gustar.
-Analise as afirmativas:¶I. "Estudio muy."¶II. "Hace mucho calor."¶III. "Es muy tarde."|C|I está errada: "muy" não acompanha verbo (estudio mucho). "Mucho" vai com verbos e substantivos; "muy" com adjetivos e advérbios.
-Analise as afirmativas:¶I. Yo vengo de Brasil.¶II. Tú vuelves a las seis.¶III. Nosotros volvemos cansados.|E|Todas corretas: venir tem 1ª pessoa irregular (vengo); volver é o→ue, exceto em nosotros/vosotros.
-Analise as afirmativas:¶I. "Hay que" exige sujeito: "hay que yo estudiar".¶II. "Tener que" concorda com o sujeito.¶III. "Deber + infinitivo" expressa obrigação.|C|I está errada: "hay que + infinitivo" é impessoal, sem sujeito.
-Analise as afirmativas:¶I. Si tengo tiempo, voy al cine.¶II. Si hace sol, fuera a la playa.¶III. Si llueve, me quedo en casa.|B|II está errada: a condicional estudada é si + presente, presente (si hace sol, voy a la playa).
-Analise as afirmativas:¶I. ¿Cuántos años tienes?¶II. ¿Cuál libro quieres?¶III. ¿Cómo te llamas?|B|II está errada: antes de substantivo usa-se "qué" (¿Qué libro quieres?). "Cuál" é usado sozinho/com ser.
-Analise as afirmativas:¶I. "Esto casa es bonita."¶II. "Aquella ventana está lejos."¶III. "Ese chico está a tu lado."|C|I está errada: "casa" é feminina, então "esta casa". "Esto" é neutro e não acompanha substantivo.
-Analise as afirmativas:¶I. Este libro es mío.¶II. Esas gafas son tuyas.¶III. Estas casas son nuestro.|A|III está errada: casas é feminino plural → "nuestras".
-Analise as afirmativas:¶I. Hay una panadería en mi calle.¶II. La panadería hay en mi calle.¶III. Mi casa está cerca del parque.|B|II está errada: com artigo definido ("la panadería") usa-se "está", não "hay".
-Analise as afirmativas:¶I. No tengo ningún amigo allí.¶II. ¿Tienes alguna duda?¶III. No quiero ninguno libros.|A|III está errada: "ninguno" não se usa com substantivo plural; seria "no quiero ningún libro".
-Analise as afirmativas:¶I. Gerúndio de pedir: pidiendo.¶II. Gerúndio de leer: leendo.¶III. Gerúndio de dormir: durmiendo.|B|II está errada: o "i" entre vogais vira "y": leyendo.
-Analise as afirmativas:¶I. "No hables" é imperativo negativo de tú.¶II. "Ven aquí" é imperativo afirmativo de tú.¶III. "No pon eso" é correto.|A|III está errada: negativo de tú usa subjuntivo: "no pongas eso".
-Analise as afirmativas:¶I. "Dámelo" é correto.¶II. "No me lo des" é correto.¶III. "Siéntate" é correto.|E|Afirmativo: pronomes colados (dámelo, siéntate). Negativo: pronomes antes do verbo (no me lo des).
-Analise as afirmativas:¶I. Antes de salir, cierro la puerta.¶II. Después de comiendo, me lavo los dientes.¶III. Antes de desayunar, me ducho.|B|II está errada: depois de "después de" vem infinitivo (después de comer).
-Analise as afirmativas:¶I. Solemos cenando a las nueve.¶II. Voy a estudiar mañana.¶III. Soy a estudiar mañana.|D|Só II está correta. Soler + infinitivo (solemos cenar) e ir a + infinitivo (voy a estudiar).
-Analise as afirmativas:¶I. La fiesta es en mi casa.¶II. Hoy es lunes.¶III. El concierto está en el teatro.|A|III está errada: para localizar eventos usa-se "ser" (el concierto es en el teatro).
-Analise as afirmativas:¶I. El zumo es una bebida.¶II. La lechuga es una fruta.¶III. La leche es una bebida.|B|II está errada: lechuga é alface (verdura), não fruta.
-Analise as afirmativas:¶I. La cena é a refeição da noite.¶II. La comida é a refeição do meio-dia, na Espanha.¶III. El desayuno é a refeição da noite.|C|III está errada: desayuno é o café da manhã. I e II estão corretas.
-Analise as afirmativas:¶I. La rodilla é parte da perna.¶II. Escribimos con los pies.¶III. Hablamos com la boca.|B|II está errada: escrevemos com as mãos (las manos).
-Analise as afirmativas:¶I. Fiebre = febre.¶II. Tos = tosse.¶III. Dolor = dor.|E|Todas corretas.
-Analise as afirmativas:¶I. Una docena son 12.¶II. Medio kilo son 500 g.¶III. Un cuarto de litro son 500 ml.|A|III está errada: um quarto de litro = 250 ml.
-Analise as afirmativas:¶I. El cuchillo sirve para cortar.¶II. El tenedor es a colher.¶III. La servilleta é o guardanapo.|B|II está errada: tenedor = garfo; colher = cuchara.
-Analise as afirmativas:¶I. La nevera conserva alimentos.¶II. La lavadora lava la ropa.¶III. La tostadora tuesta el pan.|E|Todas corretas.
-Analise as afirmativas:¶I. En la cocina cocinamos.¶II. En el baño dormimos.¶III. En el salón vemos la tele.|B|II está errada: dormimos no dormitorio.
-Analise as afirmativas:¶I. 1200 = mil doscientos.¶II. 3000 = tres mil.¶III. 5000 = cinco miles.|A|III está errada: "mil" é invariável: cinco mil.
-Complete: "Mis padres ___ ver la tele por la noche."|suele|solemos|suelen|sueles|suelo|C|Soler (o→ue); sujeito "mis padres" (3ª plural) → suelen.
-Complete: "A mí no me ___ nada ir a la playa hoy."|apetecen|apetece|apeteces|apetecer|apetezco|B|Apetecer funciona como gustar; o que "apetece" é "ir" (infinitivo) → singular.
-Complete: "¿Dónde ___ el museo?"|hay|es|está|son|estoy|C|Localização de algo conhecido (el museo) → estar.
-Complete: "— ¿De quién es esa mochila? — Es ___."|mía|mi|mías|mío|me|A|Posesivo tônico após ser; mochila (fem. sing.) → mía.
-Complete: "— ¿___ prefieres, té o café?"|Qué|Cuál|Cuáles|Cuánto|Dónde|B|Para escolher entre opções conhecidas usa-se "cuál".
-Complete: "— ¿___ cuesta el billete?"|Cuántas|Cuántos|Cuánto|Cuál|Cuándo|C|Pergunta de preço/quantidade com verbo: "cuánto".
-Complete: "Mañana ___ a ir al médico."|voy|soy|estoy|tengo|hago|A|Futuro próximo: ir a + infinitivo → voy a ir.
-Gerúndio de "pedir":|pedindo|pidiendo|pediendo|pidendo|pedendo|B|Verbos em -ir com e→i na raiz: pidiendo.
-Gerúndio de "decir":|deciendo|dicendo|diciendo|dizendo|decendo|C|Decir faz e→i no gerúndio: diciendo.
-Imperativo afirmativo (tú) de "venir":|viene|vienes|ven|venga|vengas|C|Imperativo irregular de tú: ven.
-Imperativo afirmativo (tú) de "decir":|di|dice|dices|diga|dí|A|Imperativo irregular de tú: di (sem acento).
-"No ___ tarde" (tú, llegar):|llegas|llega|llegues|llegue|llegar|C|Imperativo negativo de tú usa a forma do subjuntivo: no llegues.
-"Siéntate" é imperativo de qual verbo e pessoa?|sentarse, tú afirmativo|sentarse, usted|sentir, tú|sentarse, nosotros|sentirse, vosotros|A|Sentarse (e→ie) → siéntate: tú afirmativo com pronome colado e acento.
-"Por favor, ___ la ventana" (usted, cerrar):|cierra|cierre|cierras|cerrar|cerrando|B|Usted usa subjuntivo no imperativo: cierre.
-Forma correta do imperativo negativo de "levantarse" (tú):|no levantes te|no te levantes|no te levanta|no levántate|no te levantas|B|No negativo os pronomes vêm antes do verbo: no te levantes.
-Forma correta de "lavarse las manos" no imperativo afirmativo (tú):|te lava|lava te|lávate|lavate|te lávate|C|No afirmativo o pronome vai colado ao verbo e a palavra recebe acento: lávate.
-Complete: "Si ___ hambre, come algo."|tienes|tendrías|tuvieras|tengas|tener|A|Si + presente, presente: tienes.
-Complete: "Si ___ frío, me pongo un abrigo."|hará|hiciera|hace|haga|hacía|C|Si + presente de indicativo: hace.
-Complete: "No hay ___ estudiante en clase."|ninguno|alguno|ningún|algún|ningunos|C|Ningún (apócope) antes de substantivo masculino singular.
-Complete: "¿Hay ___ libros en la mesa?"|algún|algunos|ninguno|alguna|ningún|B|Libros é masculino plural → algunos.
-Complete: "En mi ciudad ___ dos hospitales."|está|están|es|hay|son|D|Existência de algo indeterminado (dos hospitales) → hay.
-Complete: "Los hospitales ___ cerca del centro."|hay|está|están|es|son|C|Localização de algo determinado (los hospitales) → están.
-Complete: "Mi hermano trabaja ___ y casi no descansa."|muy|mucho|mucha|muchos|muchas|B|Depois de verbo usa-se "mucho" (invariável); "muy" só acompanha adjetivos e advérbios.
-Complete: "Hay ___ gente en la playa."|muy|mucho|mucha|muchos|muchas|C|Gente é feminino singular: mucha gente.
-Assinale a frase que expressa obrigação IMPESSOAL:|Tengo que salir.|Debes salir.|Hay que salir.|Voy a salir.|Suelo salir.|C|"Hay que + infinitivo" não tem sujeito definido.
-Qual fórmula é usada para atender o telefone?|¿Adiós?|¿Gracias?|¿Perdón?|¿Dígame?|¿Hasta luego?|D|¿Diga?/¿Dígame? são as fórmulas de atendimento.
-Complete: "Para la tos puedo tomar ___."|un jarabe|un tenedor|una lavadora|una silla|un plato|A|Jarabe = xarope, remédio para tosse.
-Complete: "En mi tiempo libre me gusta ___ al fútbol."|jugar|hacer|tocar|poner|ir|A|Jugar a + esporte/jogo.
-Complete: "Compro ___ de leche en el supermercado."|una docena|un kilo|un metro|un litro|un grado|D|Líquidos são medidos em litros.
-Complete: "Pongo la mesa: el plato, el vaso, la ___ y el tenedor."|lavadora|nevera|cuchara|almohada|puerta|C|Cuchara faz parte do serviço de mesa.
-Complete: "Uso el ___ para despertarme por la mañana."|despertador|horno|lavavajillas|sofá|grifo|A|Despertador = despertador.
-Para calentar comida rápido, uso:|la plancha|el microondas|la lavadora|el armario|la nevera|B|Microondas = micro-ondas.
-Los platos se lavan en el:|dormitorio|pasillo|fregadero|sofá|balcón|C|Fregadero = pia da cozinha.
-"___ la puerta" (fechar):|Encender|Cerrar|Apagar|Enchufar|Cargar|B|Cerrar = fechar.
-Complete: "El supermercado está ___ del banco (em frente)."|enfrente|dentro|debajo|encima|lejos|A|Enfrente de = em frente a.
-Complete: "El libro está ___ la mesa (sobre)."|encima de|debajo|lejos|dentro|fuera|A|Encima de = em cima de.
-Para sacar dinero, voy al:|mercado|correos|hospital|banco|colegio|D|Banco = banco, serviço da cidade.
-2025 em espanhol:|dos mil veinticinco|doscientos veinticinco|dos mil y veinticinco|mil veinticinco|veinte veinticinco|A|2000 = dos mil; 25 = veinticinco.
-15.000 em espanhol:|cincuenta mil|mil quince|quince mil|quinientos mil|quince millones|C|15 = quince; 1000 = mil.
-Complete: "En ___ las hojas de los árboles caen."|primavera|verano|invierno|ayer|otoño|E|Outono = otoño.
-Complete: "En Rusia, en invierno ___ mucho frío."|está|hace|tiene|es|hay|B|Clima: hace frío/calor.
-"Dos veces por semana" em espanhol:|todos los días|dos veces a la semana|casi nunca|a veces|siempre|B|Expressão de frequência: dos veces a la semana.
-Complete: "Primero abro el libro; ___ leo el texto; por último respondo."|ayer|antes|nunca|luego|aunque|D|Luego = depois; serve para ordenar o discurso.
-Qual expressão se refere ao futuro?|anteayer|hace una semana|el año pasado|pasado mañana|ayer|D|Pasado mañana = depois de amanhã.`.split("\n");
+const RAW=`0|Complete: "Yo ___ de Brasil y ella ___ de Chile." (venir)|vengo; viene|vienes; vengo|vengo; vienen|A|Venir: yo vengo (irregular), ella viene.
+0|Complete: "Nosotros ___ a casa a las seis." (volver)|vuelvemos|vuelven|volvemos|C|Volver (o→ue) não muda em nosotros.
+0|Complete: "¿Tú ___ ir al cine hoy?" (querer)|queres|quieres|quiero|B|Querer: e→ie; tú quieres.
+0|Complete: "Yo ___ la tarea todos los días." (hacer)|hago|hacio|hace|A|Hacer tem yo irregular: hago.
+0|Complete: "Ellos ___ en Madrid." (estar)|son|estamos|están|C|Estar na 3ª pessoa do plural: están.
+0|Qual é a forma de "pedir" para tú?|pedes|pides|pidas|B|Pedir: e→i; tú pides.
+1|Complete: "A mí me ___ los libros de misterio." (encantar)|encanta|encantan|encantas|B|Sujeito plural (los libros): encantan.
+1|Complete: "A Pedro le ___ la cabeza." (doler)|duele|duelen|dolen|A|Cabeza é singular: duele.
+1|Complete: "¿Te ___ ir al cine esta noche?" (apetecer)|apetecen|apetece|apeteces|B|Infinitivo conta como singular: apetece.
+1|Complete: "A nosotros nos ___ las lenguas." (interesar)|interesa|interesamos|interesan|C|Las lenguas é plural: interesan.
+1|Qual frase está correta?|Yo gusto el café.|Me gusta el café.|Me gustan el café.|B|Gustar concorda com a coisa: me gusta el café.
+2|Complete: "Mi abuela es ___ simpática."|mucho|muy|mucha|B|Muy vem antes de adjetivo.
+2|Complete: "Trabajas ___."|mucho|muy|mucha|A|Depois do verbo usa-se mucho.
+2|Complete: "Hay ___ personas en la fiesta."|muchos|mucha|muchas|C|Concorda com personas (feminino plural).
+2|Complete: "Mi madre tiene ___ trabajo."|muy|muchos|mucho|C|Trabajo é masculino singular: mucho.
+3|Para aprobar, ___ estudiar. (obrigação impessoal)|hay que|tengo que|debes que|A|Hay que + infinitivo é impessoal.
+3|Complete: "Ella ___ que trabajar el sábado."|tienes|tiene|tener|B|Tener que concorda com ella: tiene.
+3|Complete: "Mis padres ___ cenar a las nueve." (costumam)|suelo|suele|suelen|C|Soler concorda com mis padres: suelen.
+3|Complete: "Esta tarde ___ a ver una película."|voy|soy|estoy|A|Ir a + infinitivo = futuro próximo.
+3|Complete: "Yo ___ viviendo en Maracanaú." (seguir)|seguir|sigo|siguen|B|Seguir + gerúndio; yo sigo.
+3|Complete: "Acabo ___ llegar."|a|de|que|B|Acabar de + infinitivo.
+3|Complete: "Empieza ___ llover."|de|que|a|C|Empezar a + infinitivo.
+3|Complete: "Volví ___ llamar a Ana." (de novo)|a|de|en|A|Volver a + infinitivo = fazer de novo.
+4|Complete: "Si ___ tiempo, voy al gimnasio."|tengo|tendré|tuviera|A|Condição real: si + presente, presente.
+4|Complete: "Si llueve, ___ en casa."|me quedaría|me quedo|me quede|B|Si + presente → presente: me quedo.
+4|Complete: "Cuando ___ a casa, ceno." (hábito)|llegaré|llego|llegara|B|Hábito: cuando + presente.
+4|Complete: "No fui a clase ___ estaba enfermo."|porque|por qué|porqué|A|Porque (junto) introduz a causa.
+4|Complete: "___ no tengo dinero, no viajo."|Como|Pero|Para|A|Como no início da frase tem valor causal.
+4|Complete: "Estudio ___ aprobar el examen."|porque|por|para|C|Para + infinitivo expressa finalidade.
+4|Complete: "Mientras ___ la cena, escucho música."|preparo|preparar|preparado|A|Mientras + presente (ações simultâneas).
+5|Complete: "¿___ años tienes?"|Cuánto|Cuántos|Cuántas|B|Años é masculino plural: cuántos.
+5|Complete: "¿___ prefieres, el rojo o el azul?"|Qué|Cuál|Quién|B|Escolha entre opções: cuál.
+5|Complete: "¿___ vive Ana? — En Sevilla."|Cuándo|Cómo|Dónde|C|Pergunta de lugar: dónde.
+5|Complete: "¡___ casa tan bonita!"|Qué|Cuál|Cómo|A|Exclamativo com substantivo: ¡Qué…!
+5|Complete: "¿___ vienes a la fiesta? — Con mi hermano."|Cuándo|Cómo|Con quién|C|A resposta indica companhia: con quién.
+6|Complete: "___ libro (aqui, comigo) es nuevo."|Este|Ese|Aquel|A|Este = perto de quem fala.
+6|Complete: "___ casa (longe de nós) es grande."|Esta|Esa|Aquella|C|Aquella = longe de ambos.
+6|"¿De quién es esta mochila?" — "Es ___." (minha)|mi|mía|mío|B|Mochila é feminino: mía.
+6|"Estas llaves son ___." (nossas)|nuestro|nuestros|nuestras|C|Llaves é feminino plural: nuestras.
+6|"¿Qué es ___?" (isto, sem dizer o nome)|esto|este|esta|A|O neutro esto não acompanha substantivo.
+7|Complete: "En mi barrio ___ un parque."|hay|está|es|A|Existência de algo indeterminado: hay.
+7|Complete: "El parque ___ cerca de mi casa."|hay|es|está|C|Localização de algo conhecido: está.
+7|Complete: "La fiesta ___ en mi casa."|está|es|hay|B|Evento + lugar usa ser.
+7|Complete: "Hoy ___ martes."|es|está|hay|A|Dia da semana usa ser.
+7|Complete: "¿___ un banco por aquí?"|Está|Hay|Es|B|Pergunta de existência: ¿Hay…?
+7|Complete: "Mis llaves ___ en la mesa."|son|hay|están|C|Objeto localizado: estar.
+8|Complete: "No tengo ___ amigo aquí."|alguno|ningún|ninguno|B|Ningún antes de masculino singular.
+8|Complete: "¿Tienes ___ duda?"|alguna|ninguna|algunas|A|Duda é feminino singular: alguna.
+8|"¿Hay periódicos?" — "No, no hay ___."|ninguno|ningún|ninguna|A|Sem substantivo, usa-se ninguno.
+8|Complete: "Tengo ___ libros de español."|algunos|algún|alguna|A|Libros é masculino plural: algunos.
+9|Complete: "Ahora yo ___ estudiando."|soy|estoy|hay|B|Estar + gerúndio.
+9|Qual é o gerúndio de "leer"?|leyendo|leendo|leiendo|A|Vogal + i vira y: leyendo.
+9|Complete: "Los niños están ___." (dormir)|dormiendo|durmiendo|dormendo|B|Dormir: o→u no gerúndio.
+10|Imperativo afirmativo de tú de "venir":|vengas|viene|ven|C|Forma irregular: ven.
+10|Complete: "No ___ eso." (tú, hacer)|haces|hagas|haz|B|Negativo de tú usa subjuntivo: hagas.
+10|Complete: "___ la verdad." (tú, decir)|Di|Dice|Diga|A|Forma irregular: di.
+10|Como se diz "dá-me o livro"?|Me da el libro|Dame el libro|Dáme el libro|B|No afirmativo o pronome vai colado: dame.
+10|Forma correta do negativo de "levantarse" (tú):|No te levantes|Levántate no|No levantes te|A|No negativo o pronome vem antes do verbo.
+10|Imperativo afirmativo de "sentarse" (tú):|Siéntate|Te sienta|Sientate|A|Pronome colado + acento: siéntate.
+11|Complete: "Ayer yo ___ al cine." (ir)|voy|fui|iba|B|Ayer pede indefinido: fui.
+11|Complete: "Esta mañana ___ café." (beber)|bebí|bebía|he bebido|C|Esta mañana (ainda em curso): pretérito perfecto.
+11|Complete: "De niño, ___ en el campo." (vivir)|viví|vivía|he vivido|B|Hábito no passado: imperfecto.
+11|Particípio de "hacer":|hecho|hacido|hado|A|Particípio irregular: hecho.
+11|Complete: "Ayer ella ___ la cena." (hacer)|hace|hizo|hacía|B|Ação concluída: indefinido hizo.
+11|Complete: "Hoy no ___ a trabajar." (ir)|fui|iba|he ido|C|Hoy: pretérito perfecto.
+11|Complete: "Cuando llegué, mi madre ya ___." (dormir)|dormía|durmió|ha dormido|A|Ação em curso no passado: imperfecto.
+11|Complete: "De pequeña, mi abuela siempre ___ pan." (hacer)|hizo|hacía|ha hecho|B|Hábito no passado: imperfecto.
+12|Complete: "Quiero que tú ___ conmigo." (venir)|vienes|vengas|vienas|B|Querer que + subjuntivo: vengas.
+12|Complete: "Espero que ellos ___ pronto." (llegar)|llegan|lleguen|llegarán|B|Esperar que + subjuntivo: lleguen.
+12|Complete: "Es importante que ___ mucha agua." (tú, beber)|bebes|bebe|bebas|C|Subjuntivo de beber: bebas.
+12|Complete: "El libro ___ compré ayer es bueno."|que|quien|cual|A|Pronome relativo: que.
+12|Complete: "Estudio para que mis padres ___ orgullosos."|están|estén|estar|B|Para que + subjuntivo: estén.
+12|Complete: "Te llamo cuando ___." (yo, llegar, futuro)|llegué|llegue|llegaré|B|Cuando com futuro pede subjuntivo: llegue.
+12|Imperativo de usted: "___ la puerta, por favor." (cerrar)|Cierra|Cerrad|Cierre|C|Usted usa a forma do subjuntivo: cierre.
+12|Complete: "El chico ___ vive aquí es mi primo."|dónde|que|cuál|B|Pronome relativo: que.
+13|Complete: "Este regalo es ___ ti."|por|de|para|C|Para indica destinatário.
+13|Complete: "Gracias ___ tu ayuda."|por|para|a|A|Gracias por indica o motivo.
+13|Complete: "Madrid es ___ grande que Sevilla."|tan|más|muy|B|Comparativo: más… que.
+13|Complete: "Ana es tan alta ___ Luis."|como|que|de|A|Igualdade: tan… como.
+13|Complete: "Es el chico ___ alto de la clase."|muy|más|tan|B|Superlativo: el más alto.
+13|Complete: "Voy ___ la escuela a pie."|en|de|a|C|Movimento até um lugar: ir a.
+13|Complete: "Estudio ___ las ocho ___ las diez."|desde; hasta|hasta; desde|en; por|A|Desde… hasta marca início e fim.
+13|Complete: "Voy a ___ Madrid."|el|la|sin artículo|C|Cidades não levam artigo.
+14|Para dormir, voy al ___.|salón|dormitorio|baño|B|Dormitorio = quarto.
+14|Guardo la comida fría en la ___.|nevera|lavadora|tostadora|A|Nevera = geladeira.
+14|Un kilo tiene ___ gramos.|100|500|1000|C|1 kg = 1000 g.
+14|Para comprar medicinas voy a la ___.|farmacia|panadería|librería|A|Farmacia vende remédios.
+14|En la mesa usamos el ___ para cortar.|tenedor|cuchillo|vaso|B|Cuchillo = faca.
+14|Comida da manhã:|desayuno|cena|merienda|A|Desayuno = café da manhã.
+14|Para lavar la ropa uso la ___.|plancha|cocina|lavadora|C|Lavadora = máquina de lavar.
+14|3.500 em espanhol:|treinta y cinco mil|tres mil quinientos|trescientos cinco|B|3000 = tres mil; 500 = quinientos.
+15|Escribimos con las ___.|piernas|manos|orejas|B|Manos = mãos.
+15|Tengo fiebre y tos: tomo un ___.|billete|tenedor|jarabe|C|Jarabe = xarope.
+15|Quien cura en el hospital es el ___.|médico|abogado|cocinero|A|Médico = médico.
+15|El ___ sirve la comida en el restaurante.|enfermero|ingeniero|camarero|C|Camarero = garçom.
+15|En ___ hace mucho calor.|verano|invierno|primavera|A|Verano = verão.
+15|Hace frío y nieva: estamos en ___.|verano|invierno|primavera|B|Invierno = inverno.
+15|"Pasado mañana" significa:|anteontem|ontem|depois de amanhã|C|Pasado mañana = depois de amanhã.
+15|"Casi nunca" significa:|às vezes|quase nunca|sempre|B|Casi nunca = quase nunca.
+15|Ao atender o telefone, diz-se:|¿Perdón?|¿Adiós?|¿Dígame?|C|¿Dígame? é a fórmula de atendimento.`.split("\n");
 const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
 /* ===== Supabase: sincronização na nuvem ===== */
 const SUPABASE_URL='https://svfcydzdsqdfoskwezhv.supabase.co';
 const SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN2ZmN5ZHpkc3FkZm9za3dlemh2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTMzOTA4NzYsImV4cCI6MjEwODk2Njg3Nn0.Roy3ucD5c2EO5b7zZGfr83XRtsA17ou9GMk6MHQfgyQ';
 let sb=null;
 try{sb=supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY)}catch(e){console.warn('Supabase indisponível; usando só o armazenamento local.',e)}
-const SYNC_KEYS=['esp.p','esp.ck','esp.h','esp2.th'];
+const SYNC_KEYS=['esp.p','esp.ck','esp.h','esp.h3','esp2.th'];
 let SB_USER=null;const sbTimers={};
 const ST={get(k,d){try{return JSON.parse(localStorage.getItem(k))||d}catch(e){return d}},
 set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}if(sb&&SB_USER&&SYNC_KEYS.includes(k))pushDebounced(k,v)}};
@@ -513,25 +519,32 @@ $$('.checklist input').forEach((x,i)=>{x.checked=!!CK[i];x.onchange=()=>{CK[i]=x
 $('#search').oninput=e=>{const q=e.target.value.toLocaleLowerCase('pt-BR').trim();$$('[data-i]').forEach(n=>{const c=cards[+n.dataset.i];n.classList.toggle('dim',q!==''&&!(c.textContent+' '+(c.dataset.key||'')).toLocaleLowerCase('pt-BR').includes(q))})};
 refMap();
 /* ===== simulado ===== */
-const AL='ABCDE',DEF=['Apenas I e II','Apenas I e III','Apenas II e III','Apenas II','I, II e III'],TC=[4,4,4,3,3,3];
-const KL={txt:'Interpretação de texto',af:'Afirmativas',cmp:'Gramática e vocabulário'},KC={txt:'--c2',af:'--c1',cmp:'--c0'};
-const Q=[];let ct=null,rem=0,ti=0;
-RAW.forEach(l=>{if(l[0]==='#'){ct=l.slice(1);rem=TC[ti++];return}const f=l.split('|');const o=f.length===3?{q:f[0],o:DEF,a:AL.indexOf(f[1]),e:f[2]}:{q:f[0],o:f.slice(1,6),a:AL.indexOf(f[6]),e:f[7]};o.id=Q.length;if(rem>0){o.t=ct;rem--}o.k=o.t?'txt':o.q.startsWith('Analise')?'af':'cmp';Q.push(o)});
-const V=$('#v-sim');let H=ST.get('esp.h',{runs:[],q:{},wrong:[]}),sess=null,tick=null,cfg={f:'all',m:'imm',n:0,sh:true};
+const AL='ABC';
+const KL={g:'Gramática',v:'Vocabulário'},KC={g:'--c2',v:'--c0'};
+const TP=[['Presente e irregulares',0],['Gustar, encantar, doler',1],['Muy, mucho e cuantificadores',2],['Perífrasis verbales',3],['Condicionales e orações (si, cuando, porque)',4],['Interrogativos e exclamativos',5],['Demostrativos e posesivos',6],['Hay, estar e ser',8],['Indefinidos e negação',9],['Estar + gerúndio',10],['Imperativo e pronomes átonos',11],['Pretéritos (perfecto, indefinido, imperfecto)',-1],['Subjuntivo e orações de relativo',-1],['Preposições, artigos, por/para e comparativos',-1],['Vocabulário: comida, casa, cidade e compras',-1],['Vocabulário: corpo, saúde, trabalho, tempo e expressões',-1]];
+const Q=[];
+RAW.forEach(l=>{const f=l.split('|'),c=f.slice(2,5),r=c[AL.indexOf(f[5])];for(let i=2;i>0;i--){const j=Math.random()*(i+1)|0;[c[i],c[j]]=[c[j],c[i]]}Q.push({id:Q.length,tp:+f[0],q:f[1],o:c,a:c.indexOf(r),e:f[6],k:+f[0]<14?'g':'v'})});
+const V=$('#v-sim');let H=ST.get('esp.h3',{runs:[],q:{},wrong:[]}),sess=null,tick=null,cfg={f:'all',m:'imm',n:0,sh:true};
 const pc=(a,b)=>b?Math.round(a/b*100):0,fmt=s=>Math.floor(s/60)+':'+String(s%60).padStart(2,'0'),tone=p=>p>=70?'':p>=50?' mid':' lo';
 const txb=q=>{if(!q.t)return'';const[t,...r]=q.t.split('¶');return`<div class="tx"><b>${t}</b>${r.join('<br>')}</div>`};
 function groups(ids){const g=[];let last=null;ids.forEach(id=>{const t=Q[id].t;if(t&&t===last)g[g.length-1].push(id);else g.push([id]);last=t});return g}
 function start(ids,cut){let g=groups(ids);if(cfg.sh){for(let i=g.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[g[i],g[j]]=[g[j],g[i]]}}ids=g.flat();if(cut&&cut<ids.length)ids=ids.slice(0,cut);sess={ids,pos:0,ans:{},m:cfg.m,t0:Date.now(),fin:false};clearInterval(tick);tick=setInterval(()=>{const e=$('#tm');if(e)e.textContent='⏱ '+fmt(Math.round((Date.now()-sess.t0)/1000))},1000);draw()}
+const byTp=f=>{const r=TP.map(()=>[0,0]);f((id,o,n)=>{const x=r[Q[id].tp];x[0]+=o;x[1]+=n});return r};
+const histRows=()=>byTp(cb=>Object.entries(H.q).forEach(([id,v])=>cb(id,v[0],v[1])));
+const runRows=()=>byTp(cb=>sess.ids.forEach(id=>cb(id,sess.ans[id]===Q[id].a?1:0,1)));
+function dg(r,max){return r.map((v,i)=>({i,ok:v[0],t:v[1],p:pc(v[0],v[1])})).filter(x=>x.t&&x.ok<x.t).sort((a,b)=>a.p-b.p||b.t-a.t).slice(0,max).map(x=>`<div class="bar" style="--c:var(${x.p<50?'--bad':x.p<70?'--c3':'--ok'})"><b>${TP[x.i][0]}</b> <span class="mu">· ${x.ok}/${x.t} (${x.p}%)</span><div><i style="width:${x.p}%"></i></div><div class="dgb">${TP[x.i][1]>=0?`<button class="btn" data-r="${x.i}">Revisar no mapa</button>`:'<span class="mu">Fora do mapa: revise nas suas anotações.</span>'}<button class="btn" data-tr="${x.i}">Treinar</button></div></div>`).join('')}
+function bindDg(){$$('[data-r]',V).forEach(b=>b.onclick=()=>{show('mapa');openT(TP[+b.dataset.r][1])});$$('[data-tr]',V).forEach(b=>b.onclick=()=>start(Q.filter(q=>q.tp===+b.dataset.tr).map(q=>q.id)))}
 function setup(){const T=Object.values(H.q).reduce((a,v)=>[a[0]+v[0],a[1]+v[1]],[0,0]),acc=pc(T[0],T[1]),n=k=>Q.filter(q=>k==='all'||q.k===k).length;
-const cat=Object.keys(KL).map(k=>{const v=Object.entries(H.q).filter(([i])=>Q[i].k===k).reduce((a,[,x])=>[a[0]+x[0],a[1]+x[1]],[0,0]);return`<div class="bar" style="--c:var(${KC[k]})">${KL[k]} <span class="mu">· ${v[1]?v[0]+'/'+v[1]+' ('+pc(v[0],v[1])+'%)':'sem dados'}</span><div><i style="width:${pc(v[0],v[1])}%"></i></div></div>`}).join('');
 const hs=H.runs.slice(-10).map(r=>`<span class="${tone(pc(r.s,r.t)).trim()}" style="height:${Math.max(pc(r.s,r.t),6)}%" title="${r.d}"><i>${pc(r.s,r.t)}</i></span>`).join('');
 const weak=Object.entries(H.q).filter(([,v])=>v[0]<v[1]).sort((a,b)=>(b[1][1]-b[1][0])-(a[1][1]-a[1][0])).slice(0,15).map(e=>+e[0]);
 const ch=(nm,v,t,on)=>`<label class="chip"><input type="radio" name="${nm}" value="${v}"${on?' checked':''}><span>${t}</span></label>`;
-V.innerHTML=`<div class="hd"><h1>Hora do <em>simulado</em></h1><p class="hint">${Q.length} questões · ${TC.length} textos-base</p></div>
-<div class="dash"><div class="cx" style="--c:var(--c0)"><h2>Seu desempenho</h2><div class="kp"><div class="ring${T[1]?'':' none'}" style="--p:${acc}"><b>${T[1]?acc+'%':'—'}</b></div><ul><li><b>${T[0]}</b> acertos</li><li><b>${T[1]-T[0]}</b> erros <span class="mu">(${T[1]?100-acc:0}%)</span></li><li><b>${H.runs.length}</b> simulados feitos</li></ul></div><div class="bars">${cat}</div>${hs?`<div class="fl">Últimos simulados (%)</div><div class="hist">${hs}</div>`:''}</div>
-<div class="cx" style="--c:var(--c1)"><h2>Monte o seu</h2><div class="fl" style="margin-top:0">Conteúdo</div><div class="chips">${[['all','Todas'],['txt',KL.txt],['af',KL.af],['cmp',KL.cmp]].map(x=>ch('f',x[0],x[1]+' · '+n(x[0]),cfg.f===x[0])).join('')}</div><div class="fl">Quantidade</div><div class="chips">${[[0,'Todas'],[10,'10'],[20,'20'],[30,'30']].map(x=>ch('n',x[0],x[1],cfg.n===x[0])).join('')}</div><div class="fl">Modo</div><div class="chips">${ch('m','imm','Feedback imediato',cfg.m==='imm')}${ch('m','exam','Modo prova (gabarito no final)',cfg.m==='exam')}</div><div class="fl">Ordem</div><div class="chips">${ch('sh','1','Embaralhar',cfg.sh)}${ch('sh','0','Original',!cfg.sh)}</div><div class="ctl" style="justify-content:flex-start"><button class="btn p" id="go" style="--c:var(--c1)">Iniciar simulado →</button>${H.wrong.length?`<button class="btn" id="rw">Refazer as ${H.wrong.length} erradas</button>`:''}${weak.length?`<button class="btn" id="wk">Treinar pontos fracos</button>`:''}</div></div></div>`;
+const dd=dg(histRows(),8);
+V.innerHTML=`<div class="hd"><h1>Hora do <em>simulado</em></h1><p class="hint">${Q.length} questões · alternativas A, B e C</p></div>
+<div class="dash"><div class="cx" style="--c:var(--c0)"><h2>Seu desempenho</h2><div class="kp"><div class="ring${T[1]?'':' none'}" style="--p:${acc}"><b>${T[1]?acc+'%':'—'}</b></div><ul><li><b>${T[0]}</b> acertos</li><li><b>${T[1]-T[0]}</b> erros <span class="mu">(${T[1]?100-acc:0}%)</span></li><li><b>${H.runs.length}</b> simulados feitos</li></ul></div>${hs?`<div class="fl">Últimos simulados (%)</div><div class="hist">${hs}</div>`:''}</div>
+<div class="cx" style="--c:var(--c1)"><h2>Monte o seu</h2><div class="fl" style="margin-top:0">Conteúdo</div><div class="chips">${[['all','Todas'],['g','Gramática'],['v','Vocabulário']].map(x=>ch('f',x[0],x[1]+' · '+n(x[0]),cfg.f===x[0])).join('')}</div><div class="fl">Quantidade</div><div class="chips">${[[0,'Todas'],[10,'10'],[25,'25'],[50,'50']].map(x=>ch('n',x[0],x[1],cfg.n===x[0])).join('')}</div><div class="fl">Modo</div><div class="chips">${ch('m','imm','Feedback imediato',cfg.m==='imm')}${ch('m','exam','Modo prova (gabarito no final)',cfg.m==='exam')}</div><div class="fl">Ordem</div><div class="chips">${ch('sh','1','Embaralhar',cfg.sh)}${ch('sh','0','Original',!cfg.sh)}</div><div class="ctl" style="justify-content:flex-start"><button class="btn p" id="go" style="--c:var(--c1)">Iniciar simulado →</button>${H.wrong.length?`<button class="btn" id="rw">Refazer as ${H.wrong.length} erradas</button>`:''}${weak.length?`<button class="btn" id="wk">Treinar pontos fracos</button>`:''}</div></div></div>
+<div class="cx" style="--c:var(--bad)"><h2>Onde você mais errou · o que revisar</h2>${T[1]?(dd||'<p style="margin:0">Nenhum erro registrado ainda. 🎉</p>'):'<p class="mu" style="margin:0">Faça o primeiro simulado e este quadro mostra seus pontos mais fracos, do pior para o melhor, com atalho para revisar e treinar.</p>'}</div>`;
 $$('input[name=f]',V).forEach(x=>x.onchange=()=>cfg.f=x.value);$$('input[name=n]',V).forEach(x=>x.onchange=()=>cfg.n=+x.value);$$('input[name=m]',V).forEach(x=>x.onchange=()=>cfg.m=x.value);$$('input[name=sh]',V).forEach(x=>x.onchange=()=>cfg.sh=x.value==='1');
-$('#go').onclick=()=>start(Q.filter(q=>cfg.f==='all'||q.k===cfg.f).map(q=>q.id),cfg.n);const r=$('#rw');if(r)r.onclick=()=>start(H.wrong.slice());const w=$('#wk');if(w)w.onclick=()=>start(weak)}
+$('#go').onclick=()=>start(Q.filter(q=>cfg.f==='all'||q.k===cfg.f).map(q=>q.id),cfg.n);const r=$('#rw');if(r)r.onclick=()=>start(H.wrong.slice());const w=$('#wk');if(w)w.onclick=()=>start(weak);bindDg()}
 function ques(){const id=sess.ids[sess.pos],q=Q[id],a=sess.ans[id],imm=sess.m==='imm',lock=imm&&a!=null,last=sess.pos===sess.ids.length-1,na=Object.keys(sess.ans).length,ok=sess.ids.filter(x=>sess.ans[x]===Q[x].a).length;
 const mp=sess.ids.map((x,i)=>{const v=sess.ans[x];return`<button class="${v==null?'':imm?(v===Q[x].a?'ok':'no'):'a'}${i===sess.pos?' cur':''}" data-p="${i}">${i+1}</button>`}).join('');
 let h=`<div class="qtop"><span class="pill">Questão ${sess.pos+1}/${sess.ids.length}</span><span class="pill" id="tm">⏱ ${fmt(Math.round((Date.now()-sess.t0)/1000))}</span>${imm?`<span class="pill gd">✓ ${ok}</span><span class="pill bd2">✗ ${na-ok}</span>`:`<span class="pill">${na} respondidas</span>`}<span class="mu">${KL[q.k]}</span></div><div class="pb"><i style="width:${na/sess.ids.length*100}%"></i></div><details><summary>Mapa de questões</summary><div class="qmap">${mp}</div></details>${txb(q)}<div class="cx" style="--c:var(${KC[q.k]});margin-top:12px"><p class="qs">${q.q.replace(/¶/g,'<br>')}</p>`+q.o.map((o,i)=>{const c=!imm?(a===i?' sel':''):a==null?'':i===q.a?' ok':i===a?' no':'';return`<button class="op${c}" data-i="${i}"${lock?' disabled':''}><b>${AL[i]}</b><span>${o}</span></button>`}).join('');
@@ -539,12 +552,12 @@ if(lock)h+=a===q.a?'<div class="fb g">✓ Resposta correta!</div>':`<div class="
 h+=`</div><div class="ctl"><button class="btn" id="pv"${sess.pos?'':' disabled'}>← Anterior</button><button class="btn" id="qt">Encerrar</button>${last?'<button class="btn p" id="fn">Finalizar ✓</button>':'<button class="btn p" id="nx">Próxima →</button>'}</div>`;
 V.innerHTML=h;$$('.op',V).forEach(b=>b.onclick=()=>{if(lock)return;sess.ans[id]=+b.dataset.i;const y=scrollY;ques();scrollTo(0,y)});$$('.qmap button',V).forEach(b=>b.onclick=()=>{sess.pos=+b.dataset.p;ques();scrollTo(0,0)});
 $('#pv').onclick=()=>{sess.pos--;ques();scrollTo(0,0)};$('#qt').onclick=()=>{if(confirm('Encerrar e voltar ao início? O progresso deste simulado será perdido.')){clearInterval(tick);sess=null;draw()}};const nx=$('#nx');if(nx)nx.onclick=()=>{sess.pos++;ques();scrollTo(0,0)};const fn=$('#fn');if(fn)fn.onclick=finish}
-function finish(){const un=sess.ids.filter(i=>sess.ans[i]==null).length;if(un&&!confirm(un+' questão(ões) sem resposta. Finalizar mesmo assim?'))return;clearInterval(tick);sess.fin=true;sess.sec=Math.round((Date.now()-sess.t0)/1000);const w=[];sess.ids.forEach(i=>{const v=H.q[i]||[0,0],c=sess.ans[i]===Q[i].a;H.q[i]=[v[0]+(c?1:0),v[1]+1];if(!c)w.push(i)});sess.w=w;H.wrong=w;H.runs.push({s:sess.ids.length-w.length,t:sess.ids.length,d:new Date().toLocaleDateString('pt-BR'),sec:sess.sec,m:sess.m});H.runs=H.runs.slice(-30);ST.set('esp.h',H);saveRunCloud(sess.ids.length-w.length,sess.ids.length,sess.sec,sess.m,sess.ids.map(i=>({id:i,correct:sess.ans[i]===Q[i].a})));draw();scrollTo(0,0)}
+function finish(){const un=sess.ids.filter(i=>sess.ans[i]==null).length;if(un&&!confirm(un+' questão(ões) sem resposta. Finalizar mesmo assim?'))return;clearInterval(tick);sess.fin=true;sess.sec=Math.round((Date.now()-sess.t0)/1000);const w=[];sess.ids.forEach(i=>{const v=H.q[i]||[0,0],c=sess.ans[i]===Q[i].a;H.q[i]=[v[0]+(c?1:0),v[1]+1];if(!c)w.push(i)});sess.w=w;H.wrong=w;H.runs.push({s:sess.ids.length-w.length,t:sess.ids.length,d:new Date().toLocaleDateString('pt-BR'),sec:sess.sec,m:sess.m});H.runs=H.runs.slice(-30);ST.set('esp.h3',H);saveRunCloud(sess.ids.length-w.length,sess.ids.length,sess.sec,sess.m,sess.ids.map(i=>({id:i,topic:Q[i].tp,correct:sess.ans[i]===Q[i].a})));draw();scrollTo(0,0)}
 function results(){const t=sess.ids.length,bl=sess.ids.filter(i=>sess.ans[i]==null).length,w=sess.w.length,s=t-w,p=pc(s,t),msg=p>=90?'Excelente! Você domina o conteúdo 🏆':p>=70?'Mandou bem! Falta pouco para a perfeição 🎉':p>=50?'Quase lá — revise as correções abaixo 💪':'Hora de voltar ao mapa e revisar as estações 🚇';
 const by=Object.keys(KL).map(k=>{const ids=sess.ids.filter(i=>Q[i].k===k);if(!ids.length)return'';const c=ids.filter(i=>sess.ans[i]===Q[i].a).length;return`<div class="bar" style="--c:var(${KC[k]})">${KL[k]} <span class="mu">· ${c}/${ids.length} (${pc(c,ids.length)}%)</span><div><i style="width:${pc(c,ids.length)}%"></i></div></div>`}).join('');
 const it=sess.ids.map((id,n)=>{const q=Q[id],a=sess.ans[id],st=a==null?'blank':a===q.a?'ok':'err',sn=(q.q.split('¶')[1]||q.q.split('¶')[0]).slice(0,80);return`<details class="it ${st}"><summary><b>${n+1}</b><span>${KL[q.k]}: ${sn}</span><em>${st==='ok'?'✓ certa':st==='err'?'✗ '+AL[a]+' → '+AL[q.a]:'— em branco'}</em></summary><div>${txb(q)}<p class="qs">${q.q.replace(/¶/g,'<br>')}</p>${q.o.map((o,i)=>`<div class="op ${i===q.a?'ok':i===a?'no':''}"><b>${AL[i]}</b><span>${o}</span></div>`).join('')}<div class="fb ${st==='ok'?'g':''}"><b>${st==='ok'?'Você acertou.':'Correção:'}</b> ${q.e}</div></div></details>`}).join('');
-V.innerHTML=`<div class="cx" style="--c:var(--c3)"><div class="big"><div class="ring" style="--p:${p}"><b>${p}%</b></div><div><h2>${s} de ${t} corretas</h2><p class="mu" style="margin:0">${msg}</p></div></div><div class="tri"><div><b style="color:var(--ok)">${s}</b><small>Acertos · ${p}%</small></div><div><b style="color:var(--bad)">${w-bl}</b><small>Erros · ${pc(w-bl,t)}%</small></div><div><b>${bl}</b><small>Em branco</small></div></div><p class="mu" style="margin:0">⏱ ${fmt(sess.sec)} no total · ${fmt(Math.round(sess.sec/t))} por questão · modo ${sess.m==='imm'?'feedback imediato':'prova'}</p><div class="bars">${by}</div><div class="ctl" style="justify-content:flex-start">${w?'<button class="btn p" id="rw" style="--c:var(--c1)">Refazer as erradas</button>':''}<button class="btn" id="nw">Novo simulado</button><button class="btn" id="bk">Revisar no mapa</button></div></div><h2 style="font:800 1.4rem var(--fh)">Correção completa</h2><div class="chips" style="margin-bottom:8px">${[['all','Todas'],['err','Erradas'],['ok','Certas'],['blank','Em branco']].map((x,i)=>`<label class="chip"><input type="radio" name="rf" value="${x[0]}"${i?'':' checked'}><span>${x[1]}</span></label>`).join('')}</div><div id="rl" data-f="all">${it}</div>`;
-$$('input[name=rf]',V).forEach(x=>x.onchange=()=>$('#rl').dataset.f=x.value);const r=$('#rw');if(r)r.onclick=()=>start(sess.w.slice());$('#nw').onclick=()=>{sess=null;draw()};$('#bk').onclick=()=>show('mapa')}
+V.innerHTML=`<div class="cx" style="--c:var(--c3)"><div class="big"><div class="ring" style="--p:${p}"><b>${p}%</b></div><div><h2>${s} de ${t} corretas</h2><p class="mu" style="margin:0">${msg}</p></div></div><div class="tri"><div><b style="color:var(--ok)">${s}</b><small>Acertos · ${p}%</small></div><div><b style="color:var(--bad)">${w-bl}</b><small>Erros · ${pc(w-bl,t)}%</small></div><div><b>${bl}</b><small>Em branco</small></div></div><p class="mu" style="margin:0">⏱ ${fmt(sess.sec)} no total · ${fmt(Math.round(sess.sec/t))} por questão · modo ${sess.m==='imm'?'feedback imediato':'prova'}</p><div class="bars">${by}</div><div class="fl">O que revisar primeiro</div>${dg(runRows(),5)||'<p style="margin:0">Nenhum erro neste simulado. Mandou muito bem! 🎉</p>'}<div class="ctl" style="justify-content:flex-start">${w?'<button class="btn p" id="rw" style="--c:var(--c1)">Refazer as erradas</button>':''}<button class="btn" id="nw">Novo simulado</button><button class="btn" id="bk">Revisar no mapa</button></div></div><h2 style="font:800 1.4rem var(--fh)">Correção completa</h2><div class="chips" style="margin-bottom:8px">${[['all','Todas'],['err','Erradas'],['ok','Certas'],['blank','Em branco']].map((x,i)=>`<label class="chip"><input type="radio" name="rf" value="${x[0]}"${i?'':' checked'}><span>${x[1]}</span></label>`).join('')}</div><div id="rl" data-f="all">${it}</div>`;
+$$('input[name=rf]',V).forEach(x=>x.onchange=()=>$('#rl').dataset.f=x.value);const r=$('#rw');if(r)r.onclick=()=>start(sess.w.slice());$('#nw').onclick=()=>{sess=null;draw()};$('#bk').onclick=()=>show('mapa');bindDg()}
 function draw(){if(!sess)setup();else if(sess.fin)results();else ques()}
 draw();show(location.hash.slice(1));
 </script>
